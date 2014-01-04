@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sales Management</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="administrative_tast_settings">Verwaltung</string>
+    <string name="moneyEarned">$ : 0000</string>
+    <string name="customer_A">A:4000</string>
+    <string name="customer_B">B:3000</string>
+    <string name="customer_C">C:6000</string>
+    <string name="customer_D">D:2000</string>
+    <string name="customer_E">E:2000</string>
+    <string name="customer_F">F:8000</string>
+    <string name="customer_G">G:4000</string>
+    <string name="customer_H">H:6000</string>
+    <string name="customer_I">I:1000</string>
+    <string name="customer_J">J:1000</string>
+    <string name="customer_K">K:9000</string>
+    <string name="customer_L">L:9000</string>
+    <string name="customer_M">M:8000</string>
+    <string name="customer_N">N:9000</string>
+    <string name="customer_O">O:8000</string>
+    <string name="customer_P">P:9000</string>
+    <string name="slashnstring"></string>
+	<string name="startNodeString">Sarten</string>
+	<string name="restaurant_R">R</string>
+	<string name="stopGame">Stoppen</string>
+	<string name="refreshGrid">Aktualisieren</string>
+	<string name="messageDuringPlay">"Willkommen  ............. "</string>
+	
+</resources>
