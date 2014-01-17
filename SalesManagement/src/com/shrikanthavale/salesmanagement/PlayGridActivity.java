@@ -8,11 +8,14 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -155,7 +158,8 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 
 		for (int nodeNumber = 0; nodeNumber < combinedShuffledNodes.size(); nodeNumber++) {
 			// add the nodes
-			gridLayout.addView(combinedShuffledNodes.get(nodeNumber));
+			gridLayout.addView(combinedShuffledNodes.get(nodeNumber),new GridLayout.LayoutParams(new ViewGroup.LayoutParams(convertDIPTOPixelUtility(48),
+					convertDIPTOPixelUtility(42))));
 		}
 
 	}
@@ -332,6 +336,7 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 	/**
 	 * update the data during reloading of state
 	 */
+	@SuppressWarnings("deprecation")
 	private void updateFromSavedState() {
 
 		hours = SalesManagementSaveActivityState.getHoursSpent();
@@ -350,9 +355,17 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 		// disable the visited customers
 		for (int viewID : visitedCustomers) {
 			findViewById(viewID).setEnabled(false);
-			findViewById(viewID).setBackground(
-					getResources().getDrawable(
-							R.drawable.customer_visited_button_background));
+			int sdk = android.os.Build.VERSION.SDK_INT;
+			if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+				findViewById(viewID).setBackgroundDrawable(
+						getResources().getDrawable(
+								R.drawable.customer_visited_button_background));
+			} else {
+				findViewById(viewID).setBackground(
+						getResources().getDrawable(
+								R.drawable.customer_visited_button_background));
+			}
+			
 		}
 
 	}
@@ -903,6 +916,20 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 		Toast toast = Toast.makeText(this, _message, Toast.LENGTH_SHORT);
 		toast.setGravity(Gravity.BOTTOM, 0, 0);
 		toast.show();
+	}
+	
+	/**
+	 * This method converts the density in pixel to normal pixel value
+	 * 
+	 * @param dip
+	 *            DIP
+	 * @return pixel value on monitor
+	 */
+	private int convertDIPTOPixelUtility(int dip) {
+		Resources resources = this.getResources();
+		float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dip,
+				resources.getDisplayMetrics());
+		return (int) px;
 	}
 
 	private int getColumnCount() {

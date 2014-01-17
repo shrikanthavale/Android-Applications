@@ -26,63 +26,63 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/customerHeading" 
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
 			/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/colonstring" 
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
 
         <TextView
             android:id="@+id/customerValue"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
              />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/customerTitleHeading"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/colonstring" 
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
 
         <TextView
             android:id="@+id/customerCaseStudyTitleValue"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
              />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/customerOrganizationHeading" 
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="@string/colonstring" 
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
 
         <TextView
             android:id="@+id/customerCaseStudyOrganizationValue"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             />
     </GridLayout>
 

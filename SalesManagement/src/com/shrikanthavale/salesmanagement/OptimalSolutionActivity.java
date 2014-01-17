@@ -5,9 +5,12 @@ import java.util.Map;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.GridLayout;
@@ -106,7 +109,8 @@ public class OptimalSolutionActivity extends Activity {
 			List<Button> combinedShuffledNodes) {
 		for (int nodeNumber = 0; nodeNumber < combinedShuffledNodes.size(); nodeNumber++) {
 			// add the nodes
-			gridLayout.addView(combinedShuffledNodes.get(nodeNumber));
+			gridLayout.addView(combinedShuffledNodes.get(nodeNumber), new GridLayout.LayoutParams(new ViewGroup.LayoutParams(convertDIPTOPixelUtility(48),
+					convertDIPTOPixelUtility(42))) );
 		}
 
 	}
@@ -255,6 +259,20 @@ public class OptimalSolutionActivity extends Activity {
 	 */
 	public void setNodeMaxAmountMap(Map<String, Integer> nodeMaxAmountMap) {
 		this.nodeMaxAmountMap = nodeMaxAmountMap;
+	}
+	
+	/**
+	 * This method converts the density in pixel to normal pixel value
+	 * 
+	 * @param dip
+	 *            DIP
+	 * @return pixel value on monitor
+	 */
+	private int convertDIPTOPixelUtility(int dip) {
+		Resources resources = this.getResources();
+		float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dip,
+				resources.getDisplayMetrics());
+		return (int) px;
 	}
 
 }

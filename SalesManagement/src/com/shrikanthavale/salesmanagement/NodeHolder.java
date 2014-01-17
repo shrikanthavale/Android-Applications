@@ -11,7 +11,6 @@ import java.util.Random;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.util.TypedValue;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 
 /**
@@ -57,10 +56,6 @@ public class NodeHolder {
 	 */
 	private List<Button> shuffledList = new ArrayList<Button>();
 
-	/**
-	 * layout parameters for setting the button layout
-	 */
-	private LayoutParams layoutParams;
 
 	private static List<Integer> shuffledNodeIDs = new ArrayList<Integer>();
 
@@ -86,8 +81,6 @@ public class NodeHolder {
 	 */
 	public NodeHolder(Activity activity) {
 		playAreaActivity = activity;
-		layoutParams = new LayoutParams(convertDIPTOPixelUtility(48),
-				convertDIPTOPixelUtility(42));
 	}
 
 	/**
@@ -103,7 +96,7 @@ public class NodeHolder {
 			customerNode.setId(nodeNumber);
 			customerNode.setFocusable(true);
 			customerNode.setFocusableInTouchMode(true);
-			customerNode.setLayoutParams(layoutParams);
+			//customerNode.setLayoutParams(layoutParams);
 			customerNode
 					.setBackgroundResource(R.drawable.customer_button_background);
 			customerNode.setTextSize(TypedValue.COMPLEX_UNIT_SP, 10);
@@ -124,7 +117,7 @@ public class NodeHolder {
 		startNode = new Button(playAreaActivity);
 		startNode.setId(17);
 		startNode.setFocusableInTouchMode(true);
-		startNode.setLayoutParams(layoutParams);
+		//startNode.setLayoutParams(layoutParams);
 		startNode.setBackgroundResource(R.drawable.start_button_background);
 		startNode.setTextSize(TypedValue.COMPLEX_UNIT_SP, 10);
 		startNode.setText(R.string.startNodeString);
@@ -139,7 +132,7 @@ public class NodeHolder {
 		restaurantNode = new Button(playAreaActivity);
 		restaurantNode.setId(18);
 		restaurantNode.setFocusableInTouchMode(true);
-		restaurantNode.setLayoutParams(layoutParams);
+		//restaurantNode.setLayoutParams(layoutParams);
 		restaurantNode
 				.setBackgroundResource(R.drawable.restaurant_button_background);
 		restaurantNode.setTextSize(TypedValue.COMPLEX_UNIT_SP, 10);
@@ -157,7 +150,7 @@ public class NodeHolder {
 			emptyNode.setId(nodeNumber);
 			emptyNode.setFocusable(true);
 			emptyNode.setFocusableInTouchMode(true);
-			emptyNode.setLayoutParams(layoutParams);
+			//emptyNode.setLayoutParams(layoutParams);
 			emptyNode
 					.setBackgroundResource(R.drawable.normal_button_background);
 			emptyNode.setText(R.string.slashnstring);
