@@ -85,5 +85,6 @@
 	<string name="zerostring">0</string>
 	<string name="dollarstring">$</string>
 	<string name="fivezerostring">00000</string>
+	<string name="internetaccesserrormessage">You are not connected to Internet, please connect</string>
 
 </resources>

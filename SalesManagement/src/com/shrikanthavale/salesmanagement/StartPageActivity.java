@@ -1,11 +1,15 @@
 package com.shrikanthavale.salesmanagement;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.administration.AdministrationActivity;
 
@@ -53,18 +57,17 @@ public class StartPageActivity extends Activity {
 					}
 				});
 
-		// exit button
-		findViewById(R.id.startPageExitButton).setOnClickListener(
-				new OnClickListener() {
-
-					@Override
-					public void onClick(View v) {
-						Intent startMain = new Intent(Intent.ACTION_MAIN);
-						startMain.addCategory(Intent.CATEGORY_HOME);
-						startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-						startActivity(startMain);
-					}
-				});
+		
+		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		if(connectivityManager != null){
+			
+			NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+			if(networkInfo == null || !networkInfo.isConnected()){
+				Toast.makeText(this, R.string.internetaccesserrormessage, Toast.LENGTH_LONG).show();
+			}
+			
+		}
+		
 	}
 
 	@Override
@@ -73,5 +76,20 @@ public class StartPageActivity extends Activity {
 		getMenuInflater().inflate(R.menu.start_page, menu);
 		return true;
 	}
-
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		if(connectivityManager != null){
+			
+			NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+			if(networkInfo == null || !networkInfo.isConnected()){
+				Toast.makeText(this, R.string.internetaccesserrormessage, Toast.LENGTH_LONG).show();
+			}
+			
+		}
+	}
+	
 }
+

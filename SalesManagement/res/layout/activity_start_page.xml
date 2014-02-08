@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,57 +7,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".StartPageActivity" >
     
-    <TextView
+     <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="1dp"
-        android:layout_marginBottom="30dp"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/startPageStartButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="158dp"
             android:layout_margin="2dp"
-            android:background="@drawable/start_page_blue_button_style"
-            android:text="@string/start_page_start_button" 
-            style="?android:attr/buttonBarButtonStyle"/>
+            android:layout_weight="0.47"
+            android:background="@drawable/start_image" />
 
         <Button
             android:id="@+id/startPageAdminButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="130dp"
             android:layout_margin="2dp"
-            android:background="@drawable/start_page_blue_button_style"
-            android:text="@string/start_page_admin_button" 
-            style="?android:attr/buttonBarButtonStyle"/>
+            android:layout_weight="0.47"
+            android:background="@drawable/settings_image" />
 
-        <Button
-            android:id="@+id/startPageAboutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:background="@drawable/start_page_blue_button_style"
-            android:text="@string/start_page_about_button"
-            style="?android:attr/buttonBarButtonStyle"/>
-
-        <Button
-            android:id="@+id/startPageExitButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:background="@drawable/start_page_blue_button_style"
-            android:text="@string/start_page_exit_button" 
-            style="?android:attr/buttonBarButtonStyle"/>
-        
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
