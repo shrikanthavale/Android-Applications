@@ -6,12 +6,15 @@ import java.util.Map;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
+import android.view.Display;
 import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.TextView;
@@ -107,11 +110,73 @@ public class OptimalSolutionActivity extends Activity {
 	 */
 	private void addNodesToGridDynamically(GridLayout gridLayout,
 			List<Button> combinedShuffledNodes) {
+
+		int dimensionWidth = getWidthBasedOnScreenSize();
+		int dimensionHeight = getHeightBasedOnScreenSize();
+
 		for (int nodeNumber = 0; nodeNumber < combinedShuffledNodes.size(); nodeNumber++) {
 			// add the nodes
-			gridLayout.addView(combinedShuffledNodes.get(nodeNumber), new GridLayout.LayoutParams(new ViewGroup.LayoutParams(convertDIPTOPixelUtility(48),
-					convertDIPTOPixelUtility(42))) );
+			gridLayout.addView(combinedShuffledNodes.get(nodeNumber),
+					new GridLayout.LayoutParams(new ViewGroup.LayoutParams(
+							convertDIPTOPixelUtility(dimensionWidth),
+							convertDIPTOPixelUtility(dimensionHeight))));
 		}
+
+	}
+
+	private int getWidthBasedOnScreenSize() {
+
+		Display display = getWindowManager().getDefaultDisplay();
+		Point size = new Point();
+		display.getSize(size);
+		int width = size.x;
+		Log.e("Shrikant", "value is width " + width);
+		if (width >= 100 && width < 200) {
+			return 39;
+		} else if (width >= 200 && width < 400) {
+			return 45;
+		} else if (width >= 400 && width < 500) {
+			return 47;
+		} else if (width >= 500 && width < 750) {
+			return 51;
+		} else if (width > 750 && width < 900) {
+			return 56;
+		} else if (width >= 900 && width < 1050) {
+			return 60;
+		} else if (width >= 1050 && width < 1200) {
+			return 64;
+		} else if (width >= 1200 && width < 1400) {
+			return 68;
+		} else
+			return 74;
+
+	}
+
+	private int getHeightBasedOnScreenSize() {
+
+		Display display = getWindowManager().getDefaultDisplay();
+		Point size = new Point();
+		display.getSize(size);
+		int height = size.y;
+		Log.e("Shrikant", "value is height " + height);
+		if (height >= 100 && height < 250) {
+			return 20;
+		} else if (height >= 250 && height < 450) {
+			return 23;
+		} else if (height >= 450 && height < 550) {
+			return 25;
+		} else if (height >= 550 && height < 650) {
+			return 30;
+		} else if (height >= 650 && height < 750) {
+			return 35;
+		} else if (height >= 750 && height < 850) {
+			return 40;
+		} else if (height >= 850 && height < 1000) {
+			return 45;
+		} else if (height >= 1000 && height < 1400) {
+			return 50;
+		} else
+			return 60;
 
 	}
 
@@ -260,7 +325,7 @@ public class OptimalSolutionActivity extends Activity {
 	public void setNodeMaxAmountMap(Map<String, Integer> nodeMaxAmountMap) {
 		this.nodeMaxAmountMap = nodeMaxAmountMap;
 	}
-	
+
 	/**
 	 * This method converts the density in pixel to normal pixel value
 	 * 

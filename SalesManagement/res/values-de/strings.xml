@@ -25,7 +25,7 @@
 	<string name="startNodeString">Sarten</string>
 	<string name="restaurant_R">R</string>
 	<string name="stopGame">Stoppen</string>
-	<string name="refreshGrid">Aktualisieren</string>
+	<string name="refreshGrid">Refresh Grid</string>
 	<string name="messageDuringPlay">"Willkommen  ............. "</string>
 	
 </resources>

@@ -7,6 +7,7 @@ import java.util.Map;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.webserviceutility.SalesManagementReadData;
 
@@ -60,7 +61,15 @@ public class LoadNodeDataAsync extends
 	@Override
 	protected Map<String, Integer> doInBackground(Void... params) {
 		// get the details using web service call
-		nodeMaxAmountMap = SalesManagementReadData.getMapNodeMaxAmount();
+		try {
+			nodeMaxAmountMap = SalesManagementReadData.getMapNodeMaxAmount();
+		} catch (Exception e) {
+			Toast.makeText(
+					playGridActivity,
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		return nodeMaxAmountMap;
 	}
 

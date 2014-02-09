@@ -5,6 +5,7 @@ package com.shrikanthavale.salesmanagement;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.administration.NodesListFragment;
 import com.shrikanthavale.salesmanagement.entities.SalesManagementQuestion;
@@ -72,8 +73,20 @@ public class LoadNodeDescriptionAsync extends
 	@Override
 	protected SalesManagementQuestion doInBackground(String... params) {
 		// get the description using webservice
-		SalesManagementQuestion salesManagementQuestion = SalesManagementReadData
-				.getSalesManagementQuestionDetailsForCustomer(params[0]);
+		SalesManagementQuestion salesManagementQuestion = new SalesManagementQuestion();
+
+		try {
+
+			salesManagementQuestion = SalesManagementReadData
+					.getSalesManagementQuestionDetailsForCustomer(params[0]);
+
+		} catch (Exception e) {
+			Toast.makeText(
+					nodeListFragment.getActivity(),
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		return salesManagementQuestion;
 	}
 

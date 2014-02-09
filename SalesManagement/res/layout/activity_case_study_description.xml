@@ -10,119 +10,119 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CaseStudyDescriptionActivity" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:text="@string/caseStudySummary"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:layout_weight="1" />
+
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:orientation="horizontal"
-        android:rowCount="3" 
-        android:layout_marginTop="5dp"
+        android:layout_height="0dip"
         android:layout_marginBottom="5dp"
         android:background="@drawable/customer_button_background"
-        android:padding="2dp">
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:rowCount="3"
+        android:layout_weight="3" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/customerHeading" 
             android:layout_margin="2dp"
-			/>
+            android:text="@string/customerHeading" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/colonstring" 
             android:layout_margin="2dp"
-            />
+            android:text="@string/colonstring" />
 
         <TextView
             android:id="@+id/customerValue"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-             />
+            android:layout_margin="2dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/customerTitleHeading"
             android:layout_margin="2dp"
-            />
+            android:text="@string/customerTitleHeading" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/colonstring" 
             android:layout_margin="2dp"
-            />
+            android:text="@string/colonstring" />
 
         <TextView
             android:id="@+id/customerCaseStudyTitleValue"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-             />
+            android:layout_margin="2dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="@string/customerOrganizationHeading" 
             android:layout_margin="2dp"
-            />
+            android:text="@string/customerOrganizationHeading" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:text="@string/colonstring" 
             android:layout_margin="2dp"
-            />
+            android:text="@string/colonstring" />
 
         <TextView
             android:id="@+id/customerCaseStudyOrganizationValue"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="2dp"
-            />
+            android:layout_margin="2dp" />
     </GridLayout>
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
         android:text="@string/caseStudyDescription"
         android:textAppearance="?android:attr/textAppearanceListItemSmall" 
-        android:layout_gravity="center"/>
-    
+        android:layout_weight="1"/>
+
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.46"
-        android:scrollbars="vertical"
+        android:layout_weight="7"
         android:background="@drawable/customer_button_background"
-        android:padding="2dp">
+        android:padding="2dp"
+        android:scrollbars="vertical" >
 
         <TextView
             android:id="@+id/questionDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="vertical" 
             android:layout_margin="2dp"
-            android:padding="2dp"/>
+            android:padding="2dp"
+            android:scrollbars="vertical" />
     </ScrollView>
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="0dip"
+        android:orientation="horizontal" 
+        android:layout_weight="2">
 
         <Button
             android:id="@+id/backPlayFromActivityDescription"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.50"
+            android:layout_weight="1"
             android:text="@string/BackPlayArea" />
 
         <Button
@@ -130,7 +130,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.50"
+            android:layout_weight="1"
             android:text="@string/OptionsButtonText" />
     </LinearLayout>
 

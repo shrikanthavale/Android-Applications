@@ -39,7 +39,7 @@ public class SalesManagementReadData {
 	}
 
 	// get the data using web service
-	public static Map<String, Integer> getMapNodeMaxAmount() {
+	public static Map<String, Integer> getMapNodeMaxAmount() throws Exception {
 
 		Map<String, Integer> nodeMaxAmountMap = new HashMap<String, Integer>();
 		RestClient restClient = new RestClient(ACCESS_QUESTION_OPTIONS_URL);
@@ -69,7 +69,7 @@ public class SalesManagementReadData {
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 
 		return nodeMaxAmountMap;
@@ -77,7 +77,7 @@ public class SalesManagementReadData {
 	}
 
 	public static SalesManagementQuestion getSalesManagementQuestionDetailsForCustomer(
-			String customer) {
+			String customer) throws Exception {
 
 		SalesManagementQuestion salesManagementQuestion = null;
 		RestClient restClient = new RestClient(ACCESS_QUESTION_URL);
@@ -100,12 +100,13 @@ public class SalesManagementReadData {
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 		return salesManagementQuestion;
 	}
 
-	public static List<SalesManagementQuestion> getSalesManagementQuestionList() {
+	public static List<SalesManagementQuestion> getSalesManagementQuestionList()
+			throws Exception {
 
 		List<SalesManagementQuestion> salesManagementQuestions = new ArrayList<SalesManagementQuestion>();
 
@@ -125,7 +126,7 @@ public class SalesManagementReadData {
 					.asList(salesManagementQuestionArray);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 
 		return salesManagementQuestions;
@@ -133,7 +134,7 @@ public class SalesManagementReadData {
 	}
 
 	public static List<SalesManagementQuestionOptions> getSalesManagementQuestionOptionsMoneyEvaluation(
-			String customer) {
+			String customer) throws Exception {
 
 		List<SalesManagementQuestionOptions> salesManagementQuestionOptions = new ArrayList<SalesManagementQuestionOptions>();
 
@@ -158,7 +159,7 @@ public class SalesManagementReadData {
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 
 		return salesManagementQuestionOptions;

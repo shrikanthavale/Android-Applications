@@ -41,7 +41,7 @@ public class SalesManagementWriteData {
 	 *             Exception if any
 	 */
 	public static Boolean saveNodeQuestionDetails(
-			SalesManagementQuestion salesManagementQuestion) {
+			SalesManagementQuestion salesManagementQuestion) throws Exception {
 
 		// convert the object to GSON String
 		Gson gson = new Gson();
@@ -63,14 +63,15 @@ public class SalesManagementWriteData {
 			SalesManagementReadData.setJsonQuestions(null);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 
 		return true;
 	}
 
 	public static Boolean saveNodeQuestionOptions(
-			List<SalesManagementQuestionOptions> salesManagementQuestionOptions) {
+			List<SalesManagementQuestionOptions> salesManagementQuestionOptions)
+			throws Exception {
 
 		// convert the object to GSON String
 		Gson gson = new Gson();
@@ -93,7 +94,7 @@ public class SalesManagementWriteData {
 			SalesManagementReadData.setJsonQuestionOptions(null);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw e;
 		}
 
 		return true;

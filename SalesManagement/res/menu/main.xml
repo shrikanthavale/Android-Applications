@@ -3,13 +3,13 @@
     <item
         android:id="@+id/refresh_game"
         android:icon="@drawable/ic_action_refresh"
-        android:showAsAction="always"
+        android:showAsAction="never"
         android:title="@string/refreshGrid">
     </item>
     <item
         android:id="@+id/stop_game"
         android:icon="@drawable/ic_action_stop"
-        android:showAsAction="ifRoom"
+        android:showAsAction="never"
         android:title="@string/stopGame">
     </item>
 

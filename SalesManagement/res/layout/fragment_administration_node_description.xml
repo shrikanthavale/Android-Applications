@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/administrationDescriptionLayoutFragmentID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#343434"
@@ -8,19 +9,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AdministrationNodeList$NodeDescriptionFragment"
-    android:id="@+id/administrationDescriptionLayoutFragmentID" >
+    tools:context=".AdministrationNodeList$NodeDescriptionFragment" >
 
     <TextView
         style="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
         android:text="@string/administration_title_label" />
 
     <EditText
         android:id="@+id/adminTitleEdit"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
         android:background="@drawable/customer_button_background"
         android:gravity="top"
         android:inputType="textMultiLine"
@@ -31,13 +33,15 @@
     <TextView
         style="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
         android:text="@string/administration_organization_label" />
 
     <EditText
         android:id="@+id/adminOrganizationEdit"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
         android:background="@drawable/customer_button_background"
         android:gravity="top"
         android:inputType="textMultiLine"
@@ -48,12 +52,14 @@
     <TextView
         style="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
         android:text="@string/administration_description_label" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="0dip"
+        android:layout_weight="5" >
 
         <EditText
             android:id="@+id/adminDescriptionEdit"
@@ -65,32 +71,31 @@
             android:lines="7"
             android:padding="2dp"
             android:singleLine="false" />
-        
     </ScrollView>
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="2dp" >
-        
-            <Button
+        android:layout_height="0dip"
+        android:layout_margin="2dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <Button
             android:id="@+id/adminCancelChangesButton"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.50"
+            android:layout_weight="1"
             android:text="@string/CancelButtonText" />
-        
+
         <Button
             android:id="@+id/adminSaveChangesButton"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.50"
+            android:layout_weight="1"
             android:text="@string/SaveButtonText" />
-        
     </LinearLayout>
 
 </LinearLayout>

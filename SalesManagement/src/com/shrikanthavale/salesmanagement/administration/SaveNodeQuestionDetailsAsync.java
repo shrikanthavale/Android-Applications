@@ -5,6 +5,7 @@ package com.shrikanthavale.salesmanagement.administration;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.entities.SalesManagementQuestion;
 import com.shrikanthavale.salesmanagement.webserviceutility.SalesManagementWriteData;
@@ -54,8 +55,17 @@ public class SaveNodeQuestionDetailsAsync extends
 
 	@Override
 	protected Boolean doInBackground(SalesManagementQuestion... params) {
-		Boolean result = SalesManagementWriteData
-				.saveNodeQuestionDetails(params[0]);
+		Boolean result = false;
+		try {
+			result = SalesManagementWriteData
+					.saveNodeQuestionDetails(params[0]);
+		} catch (Exception e) {
+			Toast.makeText(
+					nodeDescriptionFragment.getActivity(),
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		if (result)
 			nodeDescriptionFragment.setSalesManagementQuestion(params[0]);
 		return result;

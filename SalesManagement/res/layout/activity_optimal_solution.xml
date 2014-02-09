@@ -13,35 +13,37 @@
     <TextView
         android:id="@+id/optimalSolutionHeading"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/optimalSolutionHeading"
-        android:layout_margin="5dp"
         style="?android:attr/textAppearanceLarge"
+        android:layout_weight="1"
         />
 
     <GridLayout
         android:id="@+id/optimalSolutionGrid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
         android:layout_marginBottom="10dp"
         android:columnCount="6"
         android:orientation="vertical"
-        android:rowCount="6" >
+        android:rowCount="6" 
+        android:layout_weight="10">
     </GridLayout>
 
     <LinearLayout
         android:id="@+id/timeScorePanel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dip"
         android:orientation="horizontal"
-        android:weightSum="2" >
+        android:weightSum="2"
+        android:layout_weight="2" >
 
         <LinearLayout
             android:id="@+id/onlyTimePanel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="1"
@@ -50,8 +52,8 @@
 
             <TextView
                 android:id="@+id/optimalHoursMinutes"
-                android:layout_width="62dp"
-                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:gravity="left|center_vertical"
                 android:text="@string/startTime"
@@ -64,13 +66,15 @@
                 android:layout_height="match_parent"
                 android:gravity="left|center_vertical"
                 android:text="@string/amstring"
+                android:layout_marginLeft="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold" />
+            
         </LinearLayout>
 
         <TextView
             android:id="@+id/optimalMoneyEarned"
-            android:layout_width="0dp"
+            android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="10dp"
@@ -85,14 +89,15 @@
     <LinearLayout
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="0dip"
+        android:orientation="horizontal" 
+        android:layout_weight="2">
 
         <Button
             android:id="@+id/optimalSolutionBackButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="@string/continuePlayArea" />
     </LinearLayout>
 

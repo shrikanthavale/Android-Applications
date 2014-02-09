@@ -7,6 +7,7 @@ import java.util.List;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.entities.SalesManagementQuestionOptions;
 import com.shrikanthavale.salesmanagement.webserviceutility.SalesManagementWriteData;
@@ -51,10 +52,20 @@ public class SaveNodeOptionsDetailsAsync extends
 	@Override
 	protected Boolean doInBackground(
 			List<SalesManagementQuestionOptions>... params) {
-		Boolean result = SalesManagementWriteData
-				.saveNodeQuestionOptions(params[0]);
+		Boolean result = false;
+		try {
+			result = SalesManagementWriteData
+					.saveNodeQuestionOptions(params[0]);
+		} catch (Exception e) {
+			Toast.makeText(
+					nodeOptionsFragment.getActivity(),
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		if (result)
 			nodeOptionsFragment.setSalesManagementQuestionOptions(params[0]);
+
 		return result;
 	}
 

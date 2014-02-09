@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Sales Management</string>
+    <string name="app_name">Sales Training</string>
     <string name="action_settings">Settings</string>
     <string name="administrative_tast_settings">Administration</string>
     <string name="moneyEarned">$ : 0000</string>
@@ -24,11 +24,11 @@
     <string name="slashnstring">\n</string>
     <string name="startNodeString">Start\n</string>
     <string name="restaurant_R">R\n</string>
-    <string name="stopGame">Stop</string>
-    <string name="refreshGrid">Refresh</string>
+    <string name="stopGame">End Game</string>
+    <string name="refreshGrid">Refresh Grid</string>
     <string name="optimalSolutionHeading">Solution</string>
     <string name="playPageHeadingText">Play Time</string>
-    <string name="OptionsButtonText">Options</string>
+    <string name="OptionsButtonText">Solutions</string>
     <string name="SubmitButtonText">Submit</string>
     <string name="CancelButtonText">Cancel</string>
     <string name="SaveButtonText">Save</string>
@@ -46,6 +46,7 @@
     <string name="customerTitleHeading">TITLE</string>
     <string name="customerOrganizationHeading">ORGANIZATION</string>
     <string name="caseStudyDescription">DESCRIPTION</string>
+    <string name="caseStudySummary">SUMMARY</string>
     <string name="caseStudyOptionsHeading">OPTIONS</string>
     <string name="caseStudyOptionEvaluation">EVALUATION</string>
     <string name="continuePlayArea">Play Area</string>
@@ -55,7 +56,7 @@
     <string name="start_page_exit_button">Exit</string>
     <string name="fragment_list_nodes">Select Customer</string>
     <string name="fragment_node_description">Edit Details</string>
-    <string name="fragment_node_options">Edit Options</string>
+    <string name="fragment_node_options">Edit Solutions</string>
     <string name="administration_title_label">Title</string>
     <string name="administration_organization_label">Organization</string>
     <string name="administration_description_label">Description</string>

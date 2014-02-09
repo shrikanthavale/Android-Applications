@@ -8,6 +8,7 @@ import java.util.Map;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.bestsolutionalgorithm.WeightedCustomerGraph;
 import com.shrikanthavale.salesmanagement.webserviceutility.SalesManagementReadData;
@@ -80,7 +81,15 @@ public class OptiomalSolutionAsync extends
 	protected Map<String, Integer> doInBackground(Void... params) {
 
 		// get the max node amount map
-		nodeMaxAmountMap = SalesManagementReadData.getMapNodeMaxAmount();
+		try {
+			nodeMaxAmountMap = SalesManagementReadData.getMapNodeMaxAmount();
+		} catch (Exception e) {
+			Toast.makeText(
+					optimalSolutionActivity,
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 
 		// calculate positions
 		weightedCustomerGraph.calculatePositionCustomerNodes(NodeHolder

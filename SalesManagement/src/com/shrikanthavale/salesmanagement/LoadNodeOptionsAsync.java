@@ -3,10 +3,12 @@
  */
 package com.shrikanthavale.salesmanagement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.administration.NodesListFragment;
 import com.shrikanthavale.salesmanagement.entities.SalesManagementQuestionOptions;
@@ -76,8 +78,17 @@ public class LoadNodeOptionsAsync extends
 			String... params) {
 
 		// get the question options using web service call
-		List<SalesManagementQuestionOptions> salesManagementQuestionOptions = SalesManagementReadData
-				.getSalesManagementQuestionOptionsMoneyEvaluation(params[0]);
+		List<SalesManagementQuestionOptions> salesManagementQuestionOptions = new ArrayList<SalesManagementQuestionOptions>();
+		try {
+			salesManagementQuestionOptions = SalesManagementReadData
+					.getSalesManagementQuestionOptionsMoneyEvaluation(params[0]);
+		} catch (Exception e) {
+			Toast.makeText(
+					nodesListFragment.getActivity(),
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		return salesManagementQuestionOptions;
 	}
 

@@ -78,8 +78,17 @@ public class NodeOptionsFragment extends Fragment {
 		// save changes on click listener
 		saveChanges.setOnClickListener(new OnClickListener() {
 
+			@SuppressWarnings("unused")
 			@Override
 			public void onClick(View v) {
+				if (true) {
+					Toast.makeText(
+							getActivity(),
+							"Editing the case study details or options feature is not yet available",
+							Toast.LENGTH_SHORT).show();
+					return;
+
+				}
 				if (validateChanges())
 					saveChangesDatabase();
 				else

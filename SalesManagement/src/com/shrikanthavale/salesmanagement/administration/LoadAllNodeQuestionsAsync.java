@@ -3,10 +3,12 @@
  */
 package com.shrikanthavale.salesmanagement.administration;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.salesmanagement.entities.SalesManagementQuestion;
 import com.shrikanthavale.salesmanagement.webserviceutility.SalesManagementReadData;
@@ -52,8 +54,17 @@ public class LoadAllNodeQuestionsAsync extends
 
 	@Override
 	protected List<SalesManagementQuestion> doInBackground(Void... params) {
-		List<SalesManagementQuestion> salesManagementQuestionOptions = SalesManagementReadData
-				.getSalesManagementQuestionList();
+		List<SalesManagementQuestion> salesManagementQuestionOptions = new ArrayList<SalesManagementQuestion>();
+		try {
+			salesManagementQuestionOptions = SalesManagementReadData
+					.getSalesManagementQuestionList();
+		} catch (Exception e) {
+			Toast.makeText(
+					allNodesList.getActivity(),
+					"Some Error Occured : " + e.getMessage()
+							+ ". Plese check your Internet connection.",
+					Toast.LENGTH_LONG).show();
+		}
 		return salesManagementQuestionOptions;
 	}
 
