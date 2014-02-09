@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Menu;
@@ -130,7 +129,6 @@ public class OptimalSolutionActivity extends Activity {
 		Point size = new Point();
 		display.getSize(size);
 		int width = size.x;
-		Log.e("Shrikant", "value is width " + width);
 		if (width >= 100 && width < 200) {
 			return 39;
 		} else if (width >= 200 && width < 400) {
@@ -158,7 +156,6 @@ public class OptimalSolutionActivity extends Activity {
 		Point size = new Point();
 		display.getSize(size);
 		int height = size.y;
-		Log.e("Shrikant", "value is height " + height);
 		if (height >= 100 && height < 250) {
 			return 20;
 		} else if (height >= 250 && height < 450) {

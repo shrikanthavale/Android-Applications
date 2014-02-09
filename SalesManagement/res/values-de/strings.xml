@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Sales Management</string>
+    <string name="app_name">Sales Training</string>
     <string name="action_settings">Einstellungen</string>
     <string name="administrative_tast_settings">Verwaltung</string>
     <string name="moneyEarned">$ : 0000</string>
@@ -26,6 +26,68 @@
 	<string name="restaurant_R">R</string>
 	<string name="stopGame">Stoppen</string>
 	<string name="refreshGrid">Refresh Grid</string>
-	<string name="messageDuringPlay">"Willkommen  ............. "</string>
+
+	    <string name="optimalSolutionHeading">Solution</string>
+    <string name="playPageHeadingText">Play Time</string>
+    <string name="OptionsButtonText">Solutions</string>
+    <string name="SubmitButtonText">Submit</string>
+    <string name="CancelButtonText">Cancel</string>
+    <string name="SaveButtonText">Save</string>
+    <string name="EditOptionsText">Options</string>
+    <string name="BackPlayArea">Back</string>
+    <string name="startTime">08:00</string>
+    <string name="popupdialogerrorMessage">Going back without answering will fetch you no score! Are you sure ?</string>
+    <string name="popupdialogTitle">Please Confirm</string>
+    <string name="popupdialogConfirmButton">Yes</string>
+    <string name="popupdialogCancelButton">No</string>
+    <string name="backfromgamescreenerror">This will terminate the game and current progress will not be saved! Are you sure ?</string>
+    <string name="refreshgamewarningmessage">This will refresh the grid and start new game, current progress will not be saved! Are you sure ?</string>
+    <string name="timeupmessage">Your time is up !!!Click Yes to see solution, No to start fresh</string>
+    <string name="customerHeading">CUSTOMER</string>
+    <string name="customerTitleHeading">TITLE</string>
+    <string name="customerOrganizationHeading">ORGANIZATION</string>
+    <string name="caseStudyDescription">DESCRIPTION</string>
+    <string name="caseStudySummary">SUMMARY</string>
+    <string name="caseStudyOptionsHeading">OPTIONS</string>
+    <string name="caseStudyOptionEvaluation">EVALUATION</string>
+    <string name="continuePlayArea">Play Area</string>
+    <string name="start_page_start_button">Start</string>
+    <string name="start_page_admin_button">Admin</string>
+    <string name="start_page_about_button">About</string>
+    <string name="start_page_exit_button">Exit</string>
+    <string name="fragment_list_nodes">Select Customer</string>
+    <string name="fragment_node_description">Edit Details</string>
+    <string name="fragment_node_options">Edit Solutions</string>
+    <string name="administration_title_label">Title</string>
+    <string name="administration_organization_label">Organization</string>
+    <string name="administration_description_label">Description</string>
+    <string name="administration_option_description_label">Option Description</string>
+    <string name="administration_option_evaluation_label">Option Evaluation</string>
+    <string name="administration_option_amount_associated_label">Amount Associated</string>
+    <string name="optionAButtonText">A</string>
+    <string name="optionBButtonText">B</string>
+    <string name="optionCButtonText">C</string>
+    <string name="optionDButtonText">D</string>
+    <string name="title_activity_optimal_solution">OptimalSolution</string>
+    
+    <!-- Messages, Warnings, Error, Information -->
+    
+	<string name="alreadyvisitednode">You already visited this node</string>
+	<string name="amstring">A.M.</string>
+	<string name="pmstring">P.M.</string>
+	<string name="nonnodeclickederrormessage">You cannot visit this node</string>
+	<string name="colonstring">:</string>
+	<string name="emptystring"></string>
+	<string name="spacestring"> </string>
+	<string name="insufficienttimetravel">Your time is up, Refresh to start new/End to see solution</string>	
+	<string name="insufficienttimevisit">Your don\'t have sufficient time, 30 minutes are required to visit node</string>
+	<string name="invalidmove">Invalid Move</string>
+	<string name="touchnodeerrormessage">Please use navigation keys, you will be redirected to previous position</string>
+	<string name="zerozerostring">00</string>
+	<string name="zerostring">0</string>
+	<string name="dollarstring">$</string>
+	<string name="fivezerostring">00000</string>
+	<string name="internetaccesserrormessage">You are not connected to Internet, please connect</string>
 	
+		
 </resources>
