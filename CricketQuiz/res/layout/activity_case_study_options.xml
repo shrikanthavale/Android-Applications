@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/optionScreenLayour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CaseStudyAllQuestionsActivity" >
+
+    <TextView
+        android:id="@+id/caseStudyOptionHeading"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/caseStudyOptionsHeading"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    <ScrollView
+        android:id="@+id/scrollViewOptions"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/customer_button_background"
+        android:padding="1dp"
+        android:scrollbars="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:showDividers="middle" >
+
+            <RadioButton
+                android:id="@+id/radio_optionA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio_optionB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp" />
+
+            <RadioButton
+                android:id="@+id/radio_optionC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp" />
+
+            <RadioButton
+                android:id="@+id/radio_optionD"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp" />
+        </RadioGroup>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/caseStudyOptionEvaluation"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+    <ScrollView
+        android:id="@+id/scrollViewOptionsEvaluataion"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/customer_button_background"
+        android:padding="2dp"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/optionEvaluationText"
+            style="?android:attr/radioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/backSubmitButtonLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/backPlayArea"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/BackPlayArea" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/submitSoultionButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/SubmitButtonText" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/continuePlayAreaButtonLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible" 
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/continuePlayArea"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/continuePlayArea" />
+            
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/refresh_game"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/refreshGrid">
+    </item>
+    <item
+        android:id="@+id/stop_game"
+        android:icon="@drawable/ic_action_stop"
+        android:showAsAction="ifRoom"
+        android:title="@string/stopGame">
+    </item>
+
+</menu>
