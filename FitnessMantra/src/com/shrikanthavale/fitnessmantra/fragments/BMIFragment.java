@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.fragments;
 
 import android.os.Bundle;
@@ -21,6 +18,8 @@ import com.example.bodymassindex.R;
 /**
  * @author Shrikant Havale
  * 
+ *         This class calculates body mass index based on the height and weight
+ *         of person
  */
 public class BMIFragment extends Fragment {
 
@@ -29,19 +28,59 @@ public class BMIFragment extends Fragment {
 	 */
 	private View bmiFragmentView;
 
-	// declaring adapters to bind with spinners
+	/**
+	 * adapter for height in feet
+	 */
 	private ArrayAdapter<String> heightFeetsAdapter;
+
+	/**
+	 * adapter for height in meters
+	 */
 	private ArrayAdapter<String> heightMetersAdapter;
+
+	/**
+	 * adapter for weight in libs
+	 */
 	private ArrayAdapter<String> weightLibsAdapter;
+
+	/**
+	 * adapter for weight in Kgs
+	 */
 	private ArrayAdapter<String> weightKgsAdapter;
 
-	// ref for UI elements
+	/**
+	 * weight spinner
+	 */
 	private Spinner weightSpinner;
+
+	/**
+	 * height spinner
+	 */
 	private Spinner heightSpinner;
+
+	/**
+	 * weight unit spinner
+	 */
 	private Spinner weightUnitSpinner;
+
+	/**
+	 * height unit spinner
+	 */
 	private Spinner heightUnitSpinner;
+
+	/**
+	 * BMI value text
+	 */
 	private TextView bmiValueText;
+
+	/**
+	 * BMI value description
+	 */
 	private TextView bmiDescriptionText;
+
+	/**
+	 * calculate button
+	 */
 	private Button calculateButton;
 
 	@Override
@@ -64,6 +103,7 @@ public class BMIFragment extends Fragment {
 				.findViewById(R.id.textView5);
 		calculateButton = (Button) bmiFragmentView.findViewById(R.id.button1);
 
+		// on click listener
 		calculateButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -85,6 +125,10 @@ public class BMIFragment extends Fragment {
 		return bmiFragmentView;
 	}
 
+	/**
+	 * calculates the BMI based on the selected weight and height. Also
+	 * generates interpretation text based on BMI value
+	 */
 	public void calculateClickHandler() {
 
 		float weight = getSelectedWeight();
