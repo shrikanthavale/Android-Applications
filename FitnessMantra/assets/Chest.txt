@@ -1,0 +1,8 @@
+Decline Dumbbell Flyes : beginner : decline_dumbbell_flyes_1 : decline_dumbbell_flyes_2 : Chest/decline_dumbbell_flyes_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38911m.mp4 
+Dumbbell Bench Press : beginner : dumbbell_bench_press_1 : dumbbell_bench_press_2 : Chest/dumbbell_bench_press_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/39001m.mp4
+Low Cable Crossover : beginner : low_cable_crossover_1 : low_cable_crossover_2 : Chest/low_cable_crossover_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/104922m.mp4
+Pushups : beginner : pushups_1 : pushups_2 : Chest/pushups_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40811m.mp4 
+Bodyweight Flyes : beginner : bodyweight_flyes_1 : bodyweight_flyes_2 : Chest/bodyweight_flyes_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/104862m.mp4 
+Dips-Chest Version : intermediate : dips_chest_version_1 : dips_chest_version_2 : Chest/dips_chest_version_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38971m.mp4
+Neck Press : intermediate : neck_press_1 : neck_press_2 : Chest/neck_press_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41421m.mp4 
+Plyo Kettlebell Pushups : expert : plyo_kettlebell_pushups_1 : plyo_kettlebell_pushups_2 : Chest/plyo_kettlebell_pushups_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/63292m.mp4

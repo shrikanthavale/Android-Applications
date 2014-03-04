@@ -1,0 +1,12 @@
+Jumping Jacks : jumping_jacks : jumping_jacks_full
+Wall Sit : wall_sit : wall_sit_full
+Push Up : push_up : push_up_full
+Abdominal Crunch : abdominal_crunch : abdominal_crunch_full
+Step-up onto chair : step_up_chair : step_up_chair_full
+Squat : squat : squat_full
+Triceps dip on chair : triceps_dip_chair : triceps_dip_chair_full 
+Plank : plank : plank_full
+High Knees running in place : high_knees_running : high_knees_running_full
+Lunge : lunge : lunge_full
+Push-up and rotation : push_up_rotation : push_up_rotation_full 
+Side plank : side_plank : side_plank_full

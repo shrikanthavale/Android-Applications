@@ -1,0 +1,8 @@
+Car Drivers : beginner : car_drivers_1 : car_drivers_2 : Shoulders/car_drivers_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/105072m.mp4 
+Front Two-Dumbbell Raise : beginner : front_two_dumbbell_raise_1 : front_two_dumbbell_raise_2 : Shoulders/front_two_dumbbell_raise_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/39951m.mp4
+One-Arm Dumbbell Press : beginner : one_arm_dumbbell_press_1 : one_arm_dumbbell_press_2 : Shoulders/one_arm_dumbbell_press_.txt : http://videocdn.bodybuilding.com/video/mp4/42000/42111m.mp4
+Power Partials : beginner : power_partials_1 : power_partials_2 : Shoulders/power_partials_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40921m.mp4
+Kettlebell Thruster : intermediate : kettlebell_thruster_1 : kettlebell_thruster_2 : Shoulders/kettlebell_thruster_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/62852m.mp4
+Lying Rear Delt Raise : intermediate : lying_read_delt_raise_1 : lying_read_delt_raise_2 : Shoulders/lying_rear_delt_raise_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/62852m.mp4
+Seated Barbell Military Press : intermediate : seated_barbell_military_press_1 : seated_barbell_military_press_2 : Shoulders/seated_barbell_military_press_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40321m.mp4
+Handstands Push-Ups : expert : handstand_push_ups_1 : handstand_push_ups_2 : Shoulders/handstand_push_ups_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/62702m.mp4 

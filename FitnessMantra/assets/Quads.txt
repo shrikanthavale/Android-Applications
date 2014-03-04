@@ -1,0 +1,10 @@
+Barbell Squats : beginner : barbell_squats_1 : barbell_squats_2 : Quads/barbell_squat_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38371m.mp4
+Barbell Walking Lunge : beginner : barbell_walking_lunge_1 : barbell_walking_lunge_2 : Quads/barbell_walking_lunge_.txt : http://videocdn.bodybuilding.com/video/mp4/106000/107032m.mp4
+Goblet Squat : beginner : goblet_squat_1 : goblet_squat_2 : Quads/goblet_squat_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/63912m.mp4
+Trap Bar Deadlift : beginner : trap_bar_deadlift_1 : trap_bar_deadlift_2 : Quads/trap_bar_deadlift_.txt : http://videocdn.bodybuilding.com/video/mp4/90000/91072m.mp4
+Hang Clean : intermediate : hang_clean_1 : hang_clean_2 : Quads/hang_clean_.txt : http://videocdn.bodybuilding.com/video/mp4/76000/77532m.mp4
+Narrow Stance Squats : intermediate : narrow_stance_squats_1 : narrow_stance_squats_2 : Quads/narrow_stance_squats_.txt : http://videocdn.bodybuilding.com/video/mp4/54000/54271m.mp4
+Rope Jumping : intermediate : rope_jumping_1 : rope_jumping_2 : Quads/rope_jumping_.txt : http://videocdn.bodybuilding.com/video/mp4/70000/71832m.mp4
+Box Squats 	with Bands : expert : box_squat_with_bands_1 : box_squat_with_bands_2 : Quads/box_squat_with_bands_.txt : http://videocdn.bodybuilding.com/video/mp4/76000/76702m.mp4
+Kettlebell Pistol Squat : expert : kettlebell_pistol_squat_1 : kettlebell_pistol_squat_2 : Quads/kettlebell_pistol_squat_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/63032m.mp4
+One Leg Barbell Squat : expert : one_leg_barbell_squat_1 : one_leg_barbell_squat_2 : Quads/one_leg_barbell_squat_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41241m.mp4

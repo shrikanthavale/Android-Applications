@@ -1,0 +1,8 @@
+Bent Over Barbell Row : beginner : bent_over_barbell_row_1 : bent_over_barbell_row_2 : Back/bent_over_barbell_row_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38411m.mp4
+Hyperextensions : beginner : hyperextensions_1 : hyperextensions_2 : Back/hyperextensions_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40141m.mp4
+Pullups : beginner : pullups_1 : pullups_2 : Back/pullups_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40861m.mp4 
+Barbell Deadlift : intermediate : barbell_deadlift_1 : barbell_deadlift_2 : Back/barbell_deadlift_.txt :  http://videocdn.bodybuilding.com/video/mp4/52000/53791m.mp4
+One-Arm Kettlebell Row : intermediate : one_arm_kettle_bar_row_1 : one_arm_kettle_bar_row_2 : Back/one_arm_kettlebell_row_.txt : http://videocdn.bodybuilding.com/video/mp4/62000/63192m.mp4
+Weighted Pull Ups : intermediate : weighted_pull_ups_1 : weighted_pull_ups_2 : Back/weighted_pull_ups_.txt : http://videocdn.bodybuilding.com/video/mp4/90000/91102m.mp4
+Atlas Stone : expert : atlas_stone_1 : atlas_stone_2 : Back/atlas_stones_.txt : http://videocdn.bodybuilding.com/video/mp4/76000/76452m.mp4
+Mixed Grip Chin : expert : mixed_grip_chin_1 : mixed_grip_chin_2 : Back/mixed_grip_chin_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41471m.mp4

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Body Mass Index</string>
+    
+    <string name="heightLabel">Height</string>
+    <string name="calculateButton">Calculate</string>
+    <string name="EmptyString"></string>
+    <string name="weightLabel">Weight</string>
+    <string name="bmiLabel">Body Mass Index</string>
+ 
+     <!--  the BMI descriptions -->
+    <string name="bmiNormal">Normal</string>
+    <string name="bmiOver">Overweight</string>
+    <string name="bmiUnder">Underweight</string>
+    <string name="bmiSUnder">Severely Underweight</string>
+    <string name="bmiObese">Obese</string>
+
+ 
+    <!--  Strings arrays used in Spinner widgets -->
+    <string-array name="heightUnitsArray">
+        <item >feet/inch</item>
+        <item >m/cm</item>
+
+    </string-array>
+    <string-array name="weightUnitsArray">
+        <item >lb</item>
+        <item >kg</item>
+    </string-array>
+ 
+    <!--  Colors used to used in the labels and the backgrouds -->
+    <color name="colorRed">#ff0000</color>
+    <color name="colorYellow">#00ffff</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorBG">#323232</color>
+    
+	<string name="bodymassindextitle">BMI</string>
+	<string name="exercisetitle">Exercises</string>
+	<string name="exerciseDetail">Exercise Detail</string>
+	<string name="sevenminutettitle">7Minute</string>   
+	<string name="imageDescription">Image Description</string>
+	<string name="headingText">Select Exercise To View Details</string>
+	<string name="guideHeading">Guide</string>
+	<string name="instructionHeading">Instructions</string>
+	<string name="emptyErrorTextMessage">Select Exercise From "Exercises" tab to view details</string>
+
+</resources>

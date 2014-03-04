@@ -1,0 +1,5 @@
+Calf Press : beginner : calf_press_1 : calf_press_2 : Calves/calf_press_.txt : http://videocdn.bodybuilding.com/video/mp4/94000/94042m.mp4
+Smith Machine Calf Raises : beginner : smith_machine_calf_raise_1 : smith_machine_calf_raise_2 : Calves/smith_machine_calf_raise_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/104362m.mp4
+Standing Calf Raises : beginner : standing_calf_raise_1 : standing_calf_raise_2 : Calves/standing_calf_raises_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41821m.mp4
+Donkey Calf Raises : intermediate : donkey_calf_raise_1 : donkey_calf_raise_2 : Calves/donkey_calf_raises_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38981m.mp4
+Standing Dumbbell Calf Raise : intermediate : standing_dumbbell_calf_raise_1 : standing_dumbbell_calf_raise_2 : Calves/standing_dumbbell_calf_raise_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41841m.mp4

@@ -1,0 +1,6 @@
+Barbell Curl : beginner : barbell_curl_1 : barbell_curl_2 : Biceps/barbell_curl_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/38241m.mp4
+Incline Inner Biceps Curl : beginner : incline_inner_biceps_curl_1 : incline_inner_biceps_curl_2 : Biceps/incline_inner_biceps_curl_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40341m.mp4
+Standing Concentration Curl : beginner : standing_concentration_curl_1 : standing_concentration_curl_2 : Biceps/standing_concentration_curl_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/104102m.mp4 
+Grip Concentration Barbell Curl : intermediate : grip_concentration_barbell_curve_1 : grip_concentration_barbell_curve_2 : Biceps/grip_concentration_barbell_curl_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40171m.mp4
+Overhead Cable Curl : intermediate : overhead_cable_curl_1 : overhead_cable_curl_2 : Biceps/overhead_cable_curl_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/41111m.mp4
+Standing One-Arm Cable Curl : intermediate : standing_one_arm_cable_curl_1 : standing_one_arm_cable_curl_2 : Biceps/standing_one_arm_cable_curl_.txt :  http://videocdn.bodybuilding.com/video/mp4/54000/54491m.mp4

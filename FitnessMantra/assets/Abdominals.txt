@@ -1,0 +1,8 @@
+3/4 Sit-Up : beginner : sit_up_1 : sit_up_2 : Abdominals/sit-up_.txt : Abdominals/105232m.mp4
+Cocoons : beginner : cocoons_1 : cocoons_2 : Abdominals/cocoons_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/105242m.mp4
+Spider Crawl : beginner : spider_crawl_1 : spider_crawl_2 : Abdominals/spider_crawl_.txt : http://videocdn.bodybuilding.com/video/mp4/104000/105292m.mp4
+Decline Crunch : intermediate : decline_crunch_1 : decline_crunch_2 : Abdominals/decline_crunch_.txt : http://videocdn.bodybuilding.com/video/mp4/52000/53951m.mp4 
+Frog Sit-Ups : intermediate : frog_sit_ups_1 : frog_sit_ups_2 : Abdominals/frog_sit-ups_.txt : http://videocdn.bodybuilding.com/video/mp4/38000/39741m.mp4
+Russian Twist : intermediate : russian_twist_1 : russian_twist_2 : Abdominals/russian_twist_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40371m.mp4
+Hanging Leg Rise : expert : hanging_lef_rise_1 : hanging_lef_rise_2 : Abdominals/hanging_leg_raise_.txt:  http://videocdn.bodybuilding.com/video/mp4/54000/54131m.mp4
+Hanging Pike : expert : hanging_pike_1 : hanging_pike_2 : Abdominals/hanging_pike_.txt : http://videocdn.bodybuilding.com/video/mp4/40000/40091m.mp4
