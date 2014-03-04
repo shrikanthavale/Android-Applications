@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.util.ArrayList;
@@ -24,16 +21,43 @@ import com.shrikanthavale.fitnessmantra.utility.LoadAllMultipleListExerciseAsync
 /**
  * @author Shrikant Havale
  * 
+ *         This class represnts a expandable list fragment, list inside list.
+ *         used to represent main group name and their sub child
+ * 
  */
 public class ExerciseMultipleListFragment extends Fragment implements
 		OnChildClickListener {
 
-	ExpandableListAdapter listAdapter;
-	ExpandableListView expListView;
-	List<String> listDataHeader = new ArrayList<String>();
-	HashMap<String, List<String>> listDataChild = new HashMap<String, List<String>>();
-	View exerciseMultipleListFragmentView;
-	LoadAllMultipleListExerciseAsync loadMultipleExerciseData;
+	/**
+	 * expandable list adapter
+	 */
+	private ExpandableListAdapter listAdapter;
+
+	/**
+	 * expandable list view
+	 */
+	private ExpandableListView expListView;
+
+	/**
+	 * list of group headers
+	 */
+	private List<String> listDataHeader = new ArrayList<String>();
+
+	/**
+	 * list of child elements
+	 */
+	private HashMap<String, List<String>> listDataChild = new HashMap<String, List<String>>();
+
+	/**
+	 * multiple list fragment view
+	 */
+	private View exerciseMultipleListFragmentView;
+
+	/**
+	 * load data async task
+	 */
+	private LoadAllMultipleListExerciseAsync loadMultipleExerciseData;
+
 	/**
 	 * communication interface
 	 */
@@ -51,6 +75,7 @@ public class ExerciseMultipleListFragment extends Fragment implements
 		expListView = (ExpandableListView) exerciseMultipleListFragmentView
 				.findViewById(R.id.expandableListView);
 
+		// create the adapter
 		listAdapter = new ExpandableListAdapter(getActivity(), listDataHeader,
 				listDataChild);
 
@@ -58,12 +83,18 @@ public class ExerciseMultipleListFragment extends Fragment implements
 		expListView.setAdapter(listAdapter);
 		expListView.setOnChildClickListener(this);
 
+		// load the multiple list data
 		loadMultipleExerciseData = new LoadAllMultipleListExerciseAsync(this);
 		loadMultipleExerciseData.execute();
 
 		return exerciseMultipleListFragmentView;
 	}
 
+	/**
+	 * Called from ASYNC task for loading of the data
+	 * 
+	 * @param exerciseMainList
+	 */
 	public void updateAdapterListData(
 			HashMap<String, List<String>> exerciseMainList) {
 
@@ -76,6 +107,7 @@ public class ExerciseMultipleListFragment extends Fragment implements
 			listDataChild.put(temp, exerciseMainList.get(temp));
 		}
 
+		// notify the adapter
 		listAdapter.notifyDataSetChanged();
 	}
 
@@ -103,10 +135,12 @@ public class ExerciseMultipleListFragment extends Fragment implements
 	public boolean onChildClick(ExpandableListView expandableList, View view,
 			int groupPosition, int childPosition, long rowId) {
 
+		// get the selected element
 		String completeText = (String) expandableList
 				.getExpandableListAdapter().getChild(groupPosition,
 						childPosition);
 
+		// use the communication interface
 		communicationInterface.communicateExercise(completeText);
 
 		return true;

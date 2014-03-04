@@ -139,6 +139,9 @@ public class MainActivity extends FragmentActivity implements
 		return true;
 	}
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void communicateExercise(String exerciseName) {
 		ExerciseDetailsFragment exerciseDetailsFragment = (ExerciseDetailsFragment) fragmentList

@@ -13,14 +13,29 @@ import android.widget.TextView;
 
 import com.example.bodymassindex.R;
 
+/**
+ * 
+ * @author Shrikant Havale
+ * 
+ *         This class is expandable list adapter containing the main list and
+ *         sub list
+ * 
+ */
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
+	/**
+	 * context
+	 */
 	private Context _context;
 
-	// header titles
+	/**
+	 * header titles
+	 */
 	private List<String> _listDataHeader;
 
-	// child data in format of header title, child title
+	/**
+	 * titles and their child elements
+	 */
 	private HashMap<String, List<String>> _listDataChild;
 
 	public ExpandableListAdapter(Context context, List<String> listDataHeader,
@@ -46,6 +61,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 			boolean isLastChild, View convertView, ViewGroup parent) {
 
 		final String childText = (String) getChild(groupPosition, childPosition);
+
+		// get the child text
 		String heading = childText.split(":")[0].trim();
 		String difficultyLevel = childText.split(":")[1].trim();
 
@@ -56,6 +73,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 					R.layout.exercise_multiple_list_items_fragment, null);
 		}
 
+		// set it to the view
 		TextView txtListChild = (TextView) convertView
 				.findViewById(R.id.exerciseMultiplListDescriptionText);
 		TextView txtDifficulty = (TextView) convertView
@@ -90,6 +108,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public View getGroupView(int groupPosition, boolean isExpanded,
 			View convertView, ViewGroup parent) {
+
+		// get the group title
 		String headerTitle = (String) getGroup(groupPosition);
 		if (convertView == null) {
 			LayoutInflater infalInflater = (LayoutInflater) this._context
@@ -100,6 +120,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 							null);
 		}
 
+		// set it to group view
 		TextView lblListHeader = (TextView) convertView
 				.findViewById(R.id.lblListHeader);
 		lblListHeader.setTypeface(null, Typeface.BOLD);

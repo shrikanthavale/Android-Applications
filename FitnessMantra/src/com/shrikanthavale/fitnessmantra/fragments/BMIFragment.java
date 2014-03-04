@@ -146,6 +146,13 @@ public class BMIFragment extends Fragment {
 
 	}
 
+	/**
+	 * evaluate color based on the BMI value
+	 * 
+	 * @param bmiValue
+	 *            bmivalue parameter as input
+	 * @return return color based on the logic
+	 */
 	private int colorBMI(float bmiValue) {
 		if (bmiValue < 16) {
 			return R.color.colorRed;
@@ -167,6 +174,13 @@ public class BMIFragment extends Fragment {
 		return (float) (weight / (height * height));
 	}
 
+	/**
+	 * calculate the interpretation text
+	 * 
+	 * @param bmiValue
+	 *            bmiValue input
+	 * @return return string text
+	 */
 	private int interpretBMI(float bmiValue) {
 		if (bmiValue < 16) {
 			return R.string.bmiSUnder;
@@ -191,10 +205,8 @@ public class BMIFragment extends Fragment {
 			String feets = selectedHeightValue.substring(0, 1);
 			String inches = selectedHeightValue.substring(2, 4);
 			return (float) (Float.parseFloat(feets) * 0.3048)
-
-			+ (float) (Float.parseFloat(inches) * 0.0254);
+					+ (float) (Float.parseFloat(inches) * 0.0254);
 		} else {
-
 			// already meters is selected, so no need to covert (just cast to
 			// float)
 			return Float.parseFloat(selectedHeightValue);
@@ -204,11 +216,9 @@ public class BMIFragment extends Fragment {
 	private float getSelectedWeight() {
 		String selectedWeightValue = (String) weightSpinner.getSelectedItem();
 		if (weightUnitSpinner.getSelectedItemPosition() == 0) {
-
 			// libs to kgs
 			return (float) (Float.parseFloat(selectedWeightValue) * 0.45359237);
 		} else {
-
 			// if already kg is selected, so no need to covert (just cast to
 			// float)
 			return Float.parseFloat(selectedWeightValue);
@@ -226,14 +236,12 @@ public class BMIFragment extends Fragment {
 							// libs is selected
 							loadLibsValueRange();
 						} else {
-
 							// kg is selected
 							loadKgsValueRange();
 						}
 					}
 
 					public void onNothingSelected(AdapterView<?> arg0) {
-
 						// Nothing to do here
 					}
 				});
@@ -241,30 +249,25 @@ public class BMIFragment extends Fragment {
 		// listener to the height unit
 		heightUnitSpinner
 				.setOnItemSelectedListener(new OnItemSelectedListener() {
-
 					public void onItemSelected(AdapterView<?> parent,
 							View view, int row, long id) {
-
 						// load the relevent units and the values
 						if (row == 0) {
 							// feets is selected
 							loadFeetsValueRange();
 						} else {
-
 							// meters is selected
 							loadMetersValueRange();
 						}
 					}
 
 					public void onNothingSelected(AdapterView<?> arg0) {
-
 						// Nothing to do here
 					}
 				});
 	}
 
 	public void loadLibsValueRange() {
-
 		weightSpinner.setAdapter(weightLibsAdapter);
 		// set the default lib value
 		weightSpinner.setSelection(weightLibsAdapter.getPosition("170"));
@@ -273,7 +276,6 @@ public class BMIFragment extends Fragment {
 	public void loadKgsValueRange() {
 		weightSpinner.setAdapter(weightKgsAdapter);
 		// set the default vaule for kg
-
 		weightSpinner.setSelection(weightKgsAdapter.getPosition(" 77"));
 	}
 
@@ -289,7 +291,6 @@ public class BMIFragment extends Fragment {
 	public void loadMetersValueRange() {
 		heightSpinner.setAdapter(heightMetersAdapter);
 		// set the default value to meters
-
 		heightSpinner.setSelection(heightMetersAdapter.getPosition("1.65"));
 	}
 
@@ -299,7 +300,6 @@ public class BMIFragment extends Fragment {
 
 		int k = 299;
 		for (int i = 1; i <= 300; i++) {
-
 			weightLibs[k--] = String.format("%3d", i);
 		}
 
@@ -312,7 +312,6 @@ public class BMIFragment extends Fragment {
 
 		k = 199;
 		for (int i = 1; i <= 200; i++) {
-
 			weightKgs[k--] = String.format("%3d", i);
 		}
 
@@ -325,11 +324,9 @@ public class BMIFragment extends Fragment {
 
 		k = 59;
 		for (int i = 3; i < 8; i++) {
-
 			for (int j = 0; j < 12; j++) {
 				heightFeets[k--] = i + "\"" + String.format("%02d", j) + "'";
 			}
-
 		}
 		// initialize the heightFeetAdapter with the heightFeets values
 		heightFeetsAdapter = new ArrayAdapter<String>(this.getActivity(),

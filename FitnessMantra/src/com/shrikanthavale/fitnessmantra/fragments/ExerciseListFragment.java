@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.util.ArrayList;
@@ -18,6 +15,8 @@ import com.shrikanthavale.fitnessmantra.utility.LoadAllExerciseAsync;
 /**
  * @author Shrikant Havale
  * 
+ *         This class is used to display the list of exericses. Currently NOT
+ *         USED, instead multiple list fragment is used
  */
 public class ExerciseListFragment extends ListFragment {
 
@@ -41,10 +40,13 @@ public class ExerciseListFragment extends ListFragment {
 
 		super.onActivityCreated(savedInstanceState);
 
+		// create the adapter
 		exerciseListAdapter = new ExerciseListAdapter(getActivity(),
 				R.layout.exercise_fragment, exerciseListString);
 
 		setListAdapter(exerciseListAdapter);
+
+		// load the data
 		loadExerciseDetailsAsync = new LoadAllExerciseAsync(this);
 		loadExerciseDetailsAsync.execute();
 	}
@@ -54,7 +56,6 @@ public class ExerciseListFragment extends ListFragment {
 		// do something with the data
 		String completeText = (String) listView.getItemAtPosition(position);
 		System.out.println(completeText);
-
 	}
 
 	/**

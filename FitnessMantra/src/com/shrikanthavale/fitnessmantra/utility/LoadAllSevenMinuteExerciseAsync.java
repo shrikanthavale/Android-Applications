@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.utility;
 
 import java.io.BufferedReader;
@@ -13,15 +10,16 @@ import java.util.List;
 import android.app.ProgressDialog;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.fitnessmantra.fragments.SevenMinuteListFragment;
 
 /**
  * @author Shrikant Havale
  * 
- *         This is ASYNC task for loading the all the questions list along with
- *         the title and organization in the form of list to be displayed for
- *         editing
+ *         This is ASYNC task for loading the all the seven minute exercises
+ *         list along with the title and image in the form of list to be
+ *         displayed
  */
 public class LoadAllSevenMinuteExerciseAsync extends
 		AsyncTask<Void, Integer, List<String>> {
@@ -58,6 +56,7 @@ public class LoadAllSevenMinuteExerciseAsync extends
 
 	@Override
 	protected List<String> doInBackground(Void... params) {
+
 		List<String> sevenMinuteExerciseMainList = new ArrayList<String>();
 		try {
 			AssetManager am = sevenMinuteExerciseListFragment.getActivity()
@@ -71,7 +70,10 @@ public class LoadAllSevenMinuteExerciseAsync extends
 			}
 
 		} catch (IOException e) {
-			e.printStackTrace();
+			Toast.makeText(
+					sevenMinuteExerciseListFragment.getActivity(),
+					"Exception occured while loading exercise details, please try again",
+					Toast.LENGTH_LONG).show();
 		}
 		return sevenMinuteExerciseMainList;
 	}

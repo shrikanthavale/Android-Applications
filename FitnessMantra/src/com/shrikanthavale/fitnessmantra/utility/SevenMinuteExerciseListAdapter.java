@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.utility;
 
 import java.util.List;
@@ -16,7 +13,8 @@ import android.widget.TextView;
 import com.example.bodymassindex.R;
 
 /**
- * Adapter for the Node list, containing the data in specific format
+ * Adapter for the seven minute exercise list, containing the data in specific
+ * format
  * 
  * @author Shrikant Havale
  * 
@@ -58,8 +56,8 @@ public class SevenMinuteExerciseListAdapter extends ArrayAdapter<String> {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 		// row view
-		View rowView = layoutInflater.inflate(
-				R.layout.sevenminute_fragment, parent, false);
+		View rowView = layoutInflater.inflate(R.layout.sevenminute_fragment,
+				parent, false);
 
 		TextView nodeTitleView = (TextView) rowView
 				.findViewById(R.id.sevenminuteexerciseDescriptionText);

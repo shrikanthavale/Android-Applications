@@ -7,8 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- * A {@link FragmentPagerAdapter} that returns a fragment corresponding to one
- * of the sections/tabs/pages.
+ * @author Shrikant Havale
+ * 
+ *         A {@link FragmentPagerAdapter} that returns a fragment corresponding
+ *         to one of the sections/tabs/pages.
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 

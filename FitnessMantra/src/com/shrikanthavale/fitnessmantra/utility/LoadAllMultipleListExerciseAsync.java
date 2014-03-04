@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.utility;
 
 import java.io.BufferedReader;
@@ -16,15 +13,16 @@ import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.view.Gravity;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.shrikanthavale.fitnessmantra.fragments.ExerciseMultipleListFragment;
 
 /**
  * @author Shrikant Havale
  * 
- *         This is ASYNC task for loading the all the questions list along with
- *         the title and organization in the form of list to be displayed for
- *         editing
+ *         This is ASYNC task for loading the exercise list and sublist along
+ *         with the group title , child title and difficulty level in the form
+ *         of list to be displayed for editing
  */
 public class LoadAllMultipleListExerciseAsync extends
 		AsyncTask<Void, Integer, HashMap<String, List<String>>> {
@@ -68,15 +66,23 @@ public class LoadAllMultipleListExerciseAsync extends
 
 	@Override
 	protected HashMap<String, List<String>> doInBackground(Void... params) {
+		// map for group header and list under header
 		HashMap<String, List<String>> exerciseMainList = new HashMap<String, List<String>>();
 		try {
 
+			// asset manager
 			AssetManager am = exerciseMultipleListFragment.getActivity()
 					.getAssets();
+
+			// open file
 			InputStream is = am.open("ExerciseMainList.txt");
 			InputStreamReader ipsr = new InputStreamReader(is);
+
+			// read file
 			BufferedReader reader = new BufferedReader(ipsr);
 			String line = null;
+
+			// store data in map
 			while ((line = reader.readLine()) != null) {
 
 				List<String> subList = new ArrayList<String>();
@@ -90,9 +96,7 @@ public class LoadAllMultipleListExerciseAsync extends
 				innerIS.close();
 				innerIPSR.close();
 				innerReader.close();
-
 				exerciseMainList.put(line, subList);
-
 			}
 
 			is.close();
@@ -100,7 +104,10 @@ public class LoadAllMultipleListExerciseAsync extends
 			reader.close();
 
 		} catch (IOException e) {
-			e.printStackTrace();
+			Toast.makeText(
+					exerciseMultipleListFragment.getActivity(),
+					"Exception occured while loading exercise details, please try again",
+					Toast.LENGTH_LONG).show();
 		}
 		return exerciseMainList;
 	}
@@ -112,6 +119,7 @@ public class LoadAllMultipleListExerciseAsync extends
 
 	@Override
 	protected void onPostExecute(HashMap<String, List<String>> exerciseMainList) {
+		// update the list on successful loading of data
 		exerciseMultipleListFragment.updateAdapterListData(exerciseMainList);
 		progressBar.dismiss();
 		super.onPostExecute(exerciseMainList);

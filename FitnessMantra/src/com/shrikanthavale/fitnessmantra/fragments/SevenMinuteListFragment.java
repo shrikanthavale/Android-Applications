@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.util.ArrayList;
@@ -25,6 +22,7 @@ import com.shrikanthavale.fitnessmantra.utility.SevenMinuteExerciseListAdapter;
 /**
  * @author Shrikant Havale
  * 
+ *         This class is list fragment containing list of seven minute exercises
  */
 public class SevenMinuteListFragment extends ListFragment {
 
@@ -60,35 +58,53 @@ public class SevenMinuteListFragment extends ListFragment {
 
 	@Override
 	public void onListItemClick(ListView listView, View v, int position, long id) {
-		// do something with the data
+
+		// get the data
 		String completeText = (String) listView.getItemAtPosition(position);
+
+		// split the data
 		String imageName = completeText.split(":")[2].trim();
 		String imageTitle = completeText.split(":")[0].trim();
+
+		// open the image
 		loadPhoto(imageName, imageTitle);
 
 	}
 
+	/**
+	 * Displays a image and title in alert dialog
+	 * 
+	 * @param imageName
+	 *            - accepts the image name to be displayed
+	 * @param imageTitle
+	 *            - accepts the image title
+	 */
 	private void loadPhoto(String imageName, String imageTitle) {
 
+		// create the alert dialog
 		AlertDialog.Builder imageDialog = new AlertDialog.Builder(
 				this.getActivity());
 
+		// inflater
 		LayoutInflater inflater = (LayoutInflater) this.getActivity()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 		View layout = inflater.inflate(R.layout.sevenminute_image_dialogue,
 				(ViewGroup) getActivity().findViewById(R.id.sevenminute_image));
 
+		// view elements
 		TextView textView = (TextView) layout
 				.findViewById(R.id.custom_fullimage_placename);
 		ImageView image = (ImageView) layout.findViewById(R.id.fullimage);
 
+		// set the data
 		image.setImageResource(getActivity().getResources().getIdentifier(
 				imageName, "drawable", getActivity().getPackageName()));
 		textView.setText(imageTitle);
 
 		imageDialog.setView(layout);
 
+		// add OK button
 		imageDialog.setPositiveButton("OK",
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
@@ -97,6 +113,7 @@ public class SevenMinuteListFragment extends ListFragment {
 
 				});
 
+		// show the dialog
 		imageDialog.create();
 		imageDialog.show();
 

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shrikanthavale.fitnessmantra.utility;
 
 import java.io.BufferedReader;
@@ -13,15 +10,16 @@ import java.util.List;
 import android.app.ProgressDialog;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import com.shrikanthavale.fitnessmantra.fragments.ExerciseListFragment;
 
 /**
  * @author Shrikant Havale
  * 
- *         This is ASYNC task for loading the all the questions list along with
- *         the title and organization in the form of list to be displayed for
- *         editing
+ *         This is ASYNC task for loading the all the exercises along with the
+ *         title and difficulty leve in the form of list to be displayed for
+ *         editing. Currently NOT USED
  */
 public class LoadAllExerciseAsync extends
 		AsyncTask<Void, Integer, List<String>> {
@@ -57,12 +55,18 @@ public class LoadAllExerciseAsync extends
 
 	@Override
 	protected List<String> doInBackground(Void... params) {
-		List<String> exerciseMainList = new ArrayList<String>();
-		try {
 
-			Thread.sleep(2000);
+		// empty list
+		List<String> exerciseMainList = new ArrayList<String>();
+
+		try {
+			// asset manager
 			AssetManager am = exerciseListFragment.getActivity().getAssets();
+
+			// open the file
 			InputStream is = am.open("ExerciseMainList.txt");
+
+			// read the file
 			InputStreamReader ipsr = new InputStreamReader(is);
 			BufferedReader reader = new BufferedReader(ipsr);
 			String line = null;
@@ -70,11 +74,17 @@ public class LoadAllExerciseAsync extends
 				exerciseMainList.add(line);
 			}
 
+			is.close();
+			ipsr.close();
+			reader.close();
+
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+			Toast.makeText(
+					exerciseListFragment.getActivity(),
+					"Exception occured while loading exercise details, please try again",
+					Toast.LENGTH_LONG).show();
 		}
+
 		return exerciseMainList;
 	}
 
@@ -85,6 +95,7 @@ public class LoadAllExerciseAsync extends
 
 	@Override
 	protected void onPostExecute(List<String> exerciseMainList) {
+		// after successful loading call the update method of the fragment
 		exerciseListFragment.updateAdapterListData(exerciseMainList);
 		progressBar.dismiss();
 		super.onPostExecute(exerciseMainList);

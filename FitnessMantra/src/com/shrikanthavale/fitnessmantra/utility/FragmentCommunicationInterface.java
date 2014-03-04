@@ -10,7 +10,7 @@ package com.shrikanthavale.fitnessmantra.utility;
 public interface FragmentCommunicationInterface {
 
 	/**
-	 * Communicate the node description based on the nodes selected for editing
+	 * Communicate the exercise based on the selected data
 	 * 
 	 * @param salesManagementQuestion
 	 *            node details containing question details
