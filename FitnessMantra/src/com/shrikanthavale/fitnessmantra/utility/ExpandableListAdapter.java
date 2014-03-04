@@ -1,4 +1,4 @@
-package com.example.utility;
+package com.shrikanthavale.fitnessmantra.utility;
 
 import java.util.HashMap;
 import java.util.List;

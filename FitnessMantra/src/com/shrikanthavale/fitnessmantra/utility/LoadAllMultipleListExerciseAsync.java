@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.utility;
+package com.shrikanthavale.fitnessmantra.utility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import android.os.AsyncTask;
 import android.view.Gravity;
 import android.view.WindowManager;
 
-import com.example.fragments.ExerciseMultipleListFragment;
+import com.shrikanthavale.fitnessmantra.fragments.ExerciseMultipleListFragment;
 
 /**
  * @author Shrikant Havale

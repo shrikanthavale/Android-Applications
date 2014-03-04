@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.fragments;
+package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,9 +17,9 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 
 import com.example.bodymassindex.R;
-import com.example.utility.ExpandableListAdapter;
-import com.example.utility.FragmentCommunicationInterface;
-import com.example.utility.LoadAllMultipleListExerciseAsync;
+import com.shrikanthavale.fitnessmantra.utility.ExpandableListAdapter;
+import com.shrikanthavale.fitnessmantra.utility.FragmentCommunicationInterface;
+import com.shrikanthavale.fitnessmantra.utility.LoadAllMultipleListExerciseAsync;
 
 /**
  * @author Shrikant Havale

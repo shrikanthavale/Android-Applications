@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.fragments;
+package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.io.BufferedReader;
 import java.io.IOException;

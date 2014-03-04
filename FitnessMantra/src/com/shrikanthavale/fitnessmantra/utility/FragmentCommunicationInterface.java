@@ -1,4 +1,4 @@
-package com.example.utility;
+package com.shrikanthavale.fitnessmantra.utility;
 
 /**
  * This is used to communicates the fragment with other activity, which in turns

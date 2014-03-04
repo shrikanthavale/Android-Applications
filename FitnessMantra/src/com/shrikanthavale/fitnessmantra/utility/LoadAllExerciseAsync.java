@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.utility;
+package com.shrikanthavale.fitnessmantra.utility;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import android.app.ProgressDialog;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
 
-import com.example.fragments.ExerciseListFragment;
+import com.shrikanthavale.fitnessmantra.fragments.ExerciseListFragment;
 
 /**
  * @author Shrikant Havale

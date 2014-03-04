@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.fragments;
+package com.shrikanthavale.fitnessmantra.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

@@ -1,4 +1,4 @@
-package com.example.bodymassindex;
+package com.shrikanthavale.fitnessmantra.mainactivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,12 +12,13 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 
-import com.example.fragments.BMIFragment;
-import com.example.fragments.ExerciseDetailsFragment;
-import com.example.fragments.ExerciseMultipleListFragment;
-import com.example.fragments.SevenMinuteListFragment;
-import com.example.utility.FragmentCommunicationInterface;
-import com.example.utility.SectionsPagerAdapter;
+import com.example.bodymassindex.R;
+import com.shrikanthavale.fitnessmantra.fragments.BMIFragment;
+import com.shrikanthavale.fitnessmantra.fragments.ExerciseDetailsFragment;
+import com.shrikanthavale.fitnessmantra.fragments.ExerciseMultipleListFragment;
+import com.shrikanthavale.fitnessmantra.fragments.SevenMinuteListFragment;
+import com.shrikanthavale.fitnessmantra.utility.FragmentCommunicationInterface;
+import com.shrikanthavale.fitnessmantra.utility.SectionsPagerAdapter;
 
 /**
  * 

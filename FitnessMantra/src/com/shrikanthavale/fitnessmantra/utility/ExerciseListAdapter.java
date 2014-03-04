@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.utility;
+package com.shrikanthavale.fitnessmantra.utility;
 
 import java.util.List;
 
@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.bodymassindex.R;
@@ -21,7 +20,7 @@ import com.example.bodymassindex.R;
  * @author Shrikant Havale
  * 
  */
-public class SevenMinuteExerciseListAdapter extends ArrayAdapter<String> {
+public class ExerciseListAdapter extends ArrayAdapter<String> {
 
 	/**
 	 * context
@@ -43,7 +42,7 @@ public class SevenMinuteExerciseListAdapter extends ArrayAdapter<String> {
 	 * @param objects
 	 *            - list of data
 	 */
-	public SevenMinuteExerciseListAdapter(Context context, int resource,
+	public ExerciseListAdapter(Context context, int resource,
 			List<String> objects) {
 		super(context, resource, objects);
 		this.context = context;
@@ -59,24 +58,16 @@ public class SevenMinuteExerciseListAdapter extends ArrayAdapter<String> {
 
 		// row view
 		View rowView = layoutInflater.inflate(
-				R.layout.sevenminute_fragment, parent, false);
+				R.layout.exercise_fragment, parent, false);
 
 		TextView nodeTitleView = (TextView) rowView
-				.findViewById(R.id.sevenminuteexerciseDescriptionText);
-
-		ImageView imageView = (ImageView) rowView.findViewById(R.id.list_image);
+				.findViewById(R.id.exerciseDescriptionText);
 
 		// complete text
 		String completeText = listContents.get(position);
 
-		String description = completeText.split(":")[0].trim();
-		String imageName = completeText.split(":")[1].trim();
-
 		// get the node text view
-		nodeTitleView.setText(description);
-
-		imageView.setImageResource(context.getResources().getIdentifier(
-				imageName, "drawable", context.getPackageName()));
+		nodeTitleView.setText(completeText);
 
 		return rowView;
 

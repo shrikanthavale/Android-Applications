@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.fragments;
+package com.shrikanthavale.fitnessmantra.fragments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,8 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.example.bodymassindex.R;
-import com.example.utility.ExerciseListAdapter;
-import com.example.utility.LoadAllExerciseAsync;
+import com.shrikanthavale.fitnessmantra.utility.ExerciseListAdapter;
+import com.shrikanthavale.fitnessmantra.utility.LoadAllExerciseAsync;
 
 /**
  * @author Shrikant Havale
