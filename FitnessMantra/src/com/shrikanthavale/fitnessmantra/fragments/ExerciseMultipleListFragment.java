@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 
-import com.example.bodymassindex.R;
+import com.shrikanthavale.fitnessmantra.bodymassindex.R;
 import com.shrikanthavale.fitnessmantra.utility.ExpandableListAdapter;
 import com.shrikanthavale.fitnessmantra.utility.FragmentCommunicationInterface;
 import com.shrikanthavale.fitnessmantra.utility.LoadAllMultipleListExerciseAsync;

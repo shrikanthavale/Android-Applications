@@ -12,7 +12,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 
-import com.example.bodymassindex.R;
+import com.shrikanthavale.fitnessmantra.bodymassindex.R;
 import com.shrikanthavale.fitnessmantra.fragments.BMIFragment;
 import com.shrikanthavale.fitnessmantra.fragments.ExerciseDetailsFragment;
 import com.shrikanthavale.fitnessmantra.fragments.ExerciseMultipleListFragment;

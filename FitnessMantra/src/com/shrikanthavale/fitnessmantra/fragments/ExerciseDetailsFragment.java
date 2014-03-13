@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.bodymassindex.R;
+import com.shrikanthavale.fitnessmantra.bodymassindex.R;
 
 /**
  * @author Shrikant Havale
