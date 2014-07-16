@@ -1,0 +1,7 @@
+Der Zweck der Phase Analyse-Phase ist es, die Bedürfnisse und Anforderungen auf hoher Ebene in früheren Phasen angzuegeben und in eindeutige (messbare und überprüfbare), rückführbare, vollständige, konsistente und von den Stakeholdern genehmigte Anforderungen zu transformieren. 
+
+Führen Sie die vorläufige Analyse aus: In diesem Schritt die Ziele, die Art und der Umfang des Problems untersucht. 
+
+Selbst wenn sich ein Problem nur auf einen kleinen Teil der Organisation bezieht müssen Sie herausfinden, was die Ziele der Organisation sind. Dann müssen Sie sehen wie das untersuchte Problem zur Organisation passt. 
+
+Wie lautet die richtige Reihenfolge von Schritten um ein Problem zu lösen?

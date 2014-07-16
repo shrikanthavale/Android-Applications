@@ -1,0 +1,7 @@
+The purpose of the Requirements Analysis Phase is to transform the needs and high-level requirements specified in earlier phases into unambiguous (measurable and testable), traceable, complete, consistent, and stake holder-approved requirements. 
+
+Conduct the preliminary analysis: in this step, you need to find out the organizations objectives and the nature and scope of the problem under study.
+
+Even if a problem refers only to a small segment of the organization itself then you need to find out what the objectives of the organization itself are. Then you need to see how the problem being studied fits in with them.
+
+What is the correct order of steps to solve a problem?

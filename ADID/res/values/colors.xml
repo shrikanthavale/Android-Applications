@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mustard">#FFCC11</color>
+    <color name="stainless_steel">#D1D1D1</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+</resources>

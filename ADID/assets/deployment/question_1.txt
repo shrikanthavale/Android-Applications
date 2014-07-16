@@ -1,0 +1,6 @@
+Task in deployment phase include the schedule of the deployment, a brief description of the benefits of the new system and the difference between the old and new system.
+
+A notice to the user should include responsibilities of the end user affected by the deployed changes and the process to obtain technical support, including contact names and phone numbers.
+
+Enhancements, upgrades, and bug fixes are done during which step in the SDLC?
+

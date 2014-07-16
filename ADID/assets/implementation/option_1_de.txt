@@ -1,0 +1,5 @@
+﻿Debugging 
+Verschlüsselung 
+Prüfung und Dokumentation 
+Algorithmenentwicklung
+Answer:2

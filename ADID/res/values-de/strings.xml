@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="make_a_note">Mach eine Notiz</string>
+    <string name="analysis">Analyse</string>
+    <string name="design">Design</string>
+    <string name="implementation">Implementierung</string>
+    <string name="deployment">Bereitstellung</string>
+    <string name="help">Hilfe</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="yesbutton">Ja</string>
+    <string name="nobutton">Nein</string>
+    <string name="resetapplicationprogresstitle">App Fortschritt zurücksetzen</string>
+    <string name="resetapplicationprogressmessage">Daten gehen verloren, einschließlich der gespeicherten Notizen und beantworteten Fragen. Sind Sie sicher?</string>
+    <string name="progressettingclearedsuccessfullymessage">Daten wurde erfolgreich gelöscht. Sie sind zurück am Start der Analyse-Phase.</string>
+    <string name="analysis_quiz">Analyse Quiz</string>
+    <string name="design_quiz">Design Quiz</string>
+    <string name="implementation_quiz">Implementierung Quiz</string>
+    <string name="deployment_quiz">Bereitstellung Quiz</string>
+    <string name="start_quiz">Starte das Quiz</string>
+
+    <!-- string constants related to tutorial -->
+    <string name="quiz_would_start">Normalerweise würde das Quiz jetzt starten</string>
+
+    <!-- string constants related to the notes -->
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+
+    <!-- string constants related to Analysis phase -->
+    <string name="analysisphase">Analyse</string>
+
+    <string name="analysisdescriptionquestionsarrayprompt">Wählen : </string>
+    <string-array name="analysisdescriptionquestionsarray">
+        <item>Beschreibung</item>
+        <item>Frage 1</item>
+        <item>Frage 2</item>
+        <item>Frage 3</item>
+    </string-array>
+    <!-- string constants related to the notes -->
+    <string name="analysislevelclearedmessage">Swipe + Tab-Funktion ist nun freigeschaltet, gehen Sie zu Würfel für den Zugriff nächste Phase.</string>
+
+    <!-- string constants related to design phase -->
+    <string name="designphase">Design</string>
+    <string name="design_description_tab_title">Beschreibung</string>
+    <string name="design_question1_tab_title">Frage 1</string>
+    <string name="design_question2_tab_title">Frage 2</string>
+    <string name="design_question3_tab_title">Frage 3</string>
+    <string name="helpheading">HILFE</string>
+    <string name="questionheading">FRAGE</string>
+    <string name="optionheading">OPTIONEN</string>
+    <string name="descriptionheadingtext">DETAILS</string>
+    <string name="noteheadingtext">NOTIZEN</string>
+    <string name="exceptionreadwrite">Lesen/Schreiben von Daten fehlgeschlagen. Bitte versuchen Sie es erneut.</string>
+    <string name="defaultnotetext">Erstellen und speichern Sie Ihre Notizen</string>
+    <string name="notessavedsuccess">Hinweise erfolgreich gespeichert</string>
+    <string name="helpbuttontext">Hilfe</string>
+    <string name="descriptionbuttontext">Details</string>
+    <string name="notesbuttontext">Notizen</string>
+    <string name="optionBtext">Option B</string>
+    <string name="optionCtext">Option C</string>
+    <string name="optionDtext">Option D</string>
+    <string name="designfeatureindicatormessage">Verwenden Sie Swipe-Gesten, um durch Fragen zu navigieren</string>
+    <string name="correctansweralertdialoguetitle">Richtige Antwort</string>
+    <string name="incorrectansweralertdialoguetitle">Falsche Antwort</string>
+    <string name="designlevelclearedmessage">Text-to-Speech-Funktion ist nun freigeschaltet. Gehen Sie zurück zum Würfel um zur nächsten Phase zu gelangen.</string>
+    <string name="correctansweralertdialoguemessage">Ihre Antwort ist richtig</string>
+    <string name="incorrectansweralertdialoguemessage">Ihre Antwort ist falsch. Bitte versuchen Sie es erneut.</string>
+
+    <!-- string constants related to implementation phase -->
+    <string name="implementationphase">Implementierung</string>
+    <string name="implementation_description_tab_title">Beschreibung</string>
+    <string name="implementation_question1_tab_title">Frage 1</string>
+    <string name="implementation_question2_tab_title">Frage 2</string>
+    <string name="implementation_question3_tab_title">Frage 3</string>
+    <string name="texttospeechdisablederrormessage">Google Text-to-Speech ist auf Ihrem Gerät installiert</string>
+    <string name="texttospeechinitializationerrormessage">Text-to-Speech konnte nicht initialisiert werden, überprüfen Sie die Geräteeinstellungen</string>
+    <string name="questionbuttontext">Frage</string>
+    <string name="optionbuttontext">Auswahl</string>
+    <string name="playbuttontext">Play</string>
+    <string name="pausebuttontext">Pause</string>
+    <string name="implementationlevelclearedmessage">Spracheingabefunktion ist nun freigeschaltet. Gehen Sie zurück zum Würfel um zur nächsten Phase zu gelangen.</string>
+
+    <!-- General ones -->
+
+    <string name="levelcleared">Level geschafft</string>
+    <string name="dummyContentDescription">ImageRepresentation</string>
+    <string name="alreadyansweredquestion">Sie haben diese Frage bereits beantwortet.</string>
+    <string name="germalanguagelocale">de</string>
+
+    <!-- String constants realted to deployment phase -->
+    <string name="deploymentphase">Bereitstellung</string>
+    <string name="deploymentfeatureindicatormessage">Verwenden Sie die Spracheingabe-Taste, um Ihre Antworten sagen zu können</string>
+    <string name="voiceinputbuttontext">Sprache</string>
+    <string name="deployment_description_tab_title">Beschreibung</string>
+    <string name="deployment_question1_tab_title">Frage 1</string>
+    <string name="deployment_question2_tab_title">Frage 2</string>
+    <string name="deployment_question3_tab_title">Frage 3</string>
+    <string name="deploymentlevelclearedmessage">Sie haben alle Levels geschafft. Sie sind nun Guru des Software Development Lifecycle-Prozesses.</string>
+    <string name="googlevoiceinputdisablederrormessage">Google Voice Input ist auf Ihrem Gerät installiert</string>
+    <string name="googlevoiceinputhintmessage">Sagen Sie entweder Option A, Option B, Option C oder Option D</string>
+    <string name="googlevoiceinvalidoptionsaid">Ungültige Option, versuchen Sie es erneut</string>
+    <string name="deploymentquestionalreadyanswered">Sie haben diese Frage bereits beantwortet</string>
+    <string name="sayallstagesclearedmessage">Herzlichen Glückwunsch, Sie haben alle Phasen des SDLC gelernt.</string>
+    <string name="saydeploymentcorrectanswer">Richtige Antwort</string>
+    <string name="saydeploymentincorrectanswer">Falsche Antwort, bitte versuchen Sie es erneut</string>
+    <string name="googlevoiceinputdisableddialoguetitle">Sprachsuche installieren?</string>
+    <string name="googlevoiceinputdisableddialogueinstallbutton">Installieren</string>
+    <string name="googlevoiceinputdisableddialoguecancelbutton">Abbrechen</string>
+
+</resources>

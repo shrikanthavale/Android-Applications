@@ -1,0 +1,11 @@
+The project team members are responsible for accomplishing assigned tasks as directed by the project manager.
+
+Once a system has been developed, tested and deployed it will enter the operations and maintenance phase.
+
+All development resources and documentation should be transferred to IT Library or to IT Helpdesk staff.
+
+All relevant documents need to be reviewed and updated taking into consideration changed introduced by the project.
+
+An example: report documentation should always reflect current state of the report (its production version).
+
+The organized process or set of steps that needs to be followed to develop an information system is known as what?

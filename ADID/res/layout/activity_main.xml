@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mustard_gradient_background"
+    android:clickable="false" >
+
+    <LinearLayout
+        android:id="@+id/mainmenu_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/snow"
+        android:clickable="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mainmenu_indicator_analysis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/analysis"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mainmenu_indicator_design"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/design"
+            android:textColor="@color/stainless_steel"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mainmenu_indicator_implementation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/implementation"
+            android:textColor="@color/stainless_steel"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mainmenu_indicator_deployment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/deployment"
+            android:textColor="@color/stainless_steel"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mainmenu_indicator_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/mainmenu_indicator"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/mainmenu_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_footer_viewflipper"
+        android:layout_below="@+id/mainmenu_indicator_separator"
+        android:clickable="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stainless_steel_rounded_background"
+            android:clickable="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/main_viewlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/snow_rounded_background"
+                android:clickable="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <at.fhooe.mcm.it.adid.controller.cube.MainGLView
+                        android:id="@+id/surfaceView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/mainmenu_arrow_left_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/arrow_left"
+                            android:clickable="false" />
+
+                        <ImageView
+                            android:id="@+id/mainmenu_arrow_up_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/arrow_up"
+                            android:clickable="false" />
+
+                        <ImageView
+                            android:id="@+id/mainmenu_arrow_right_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/arrow_right"
+                            android:clickable="false" />
+
+                        <ImageView
+                            android:id="@+id/mainmenu_arrow_down_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/arrow_down"
+                            android:clickable="false" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/main_footer_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" >
+
+        <include
+            android:id="@+id/make_note_footer"
+            layout="@layout/activity_main_make_note" />
+
+        <include
+            android:id="@+id/show_note_footer"
+            layout="@layout/activity_main_show_note" />
+
+        <include
+            android:id="@+id/start_quiz_footer"
+            layout="@layout/activity_main_quiz_footer" />
+    </ViewFlipper>
+
+</RelativeLayout>

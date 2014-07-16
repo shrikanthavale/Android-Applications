@@ -1,0 +1,5 @@
+Problem / Chancen-Identifizierung 
+Analyse 
+Design 
+Entwicklung und Dokumentation
+Answer:3
