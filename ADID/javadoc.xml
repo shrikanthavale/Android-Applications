@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="libs/android-support-v4.jar;libs/jpct_ae.jar;C:\Android\android-sdks\tools\support\annotations.jar;C:\Android\android-sdks\platforms\android-19\android.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="at.fhooe.mcm.it.adid.model.utility,at.fhooe.mcm.it.adid.controller.activities.analysis,at.fhooe.mcm.it.adid.controller.activities,at.fhooe.mcm.it.adid.controller.activities.design,at.fhooe.mcm.it.adid.controller.cube,at.fhooe.mcm.it.adid.controller.activities.deployment,at.fhooe.mcm.it.adid.model.cube,at.fhooe.mcm.it.adid.model,at.fhooe.mcm.it.adid.controller.activities.implementation" source="1.6" sourcefiles="gen/at/fhooe/mcm/it/adid/BuildConfig.java,gen/at/fhooe/mcm/it/adid/R.java" sourcepath="src;gen" splitindex="true" use="true" version="true">
+            <link href="file:/C:/Android/android-sdks/docs/reference"/>
+        </javadoc>
+    </target>
+</project>

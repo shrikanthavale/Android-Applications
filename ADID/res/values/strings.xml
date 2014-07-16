@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super-ADID</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="make_a_note">Make a note</string>
+    <string name="analysis">Analysis</string>
+    <string name="design">Design</string>
+    <string name="implementation">Implementation</string>
+    <string name="deployment">Deployment</string>
+    <string name="help">Help</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="reset">Reset</string>
+    <string name="yesbutton">Yes</string>
+    <string name="nobutton">No</string>
+    <string name="resetapplicationprogresstitle">Reset App Progress</string>
+    <string name="resetapplicationprogressmessage">App\'s progress will be lost, including saved notes and questions answered. Are you sure?</string>
+    <string name="progressettingclearedsuccessfullymessage">App\'s progress was cleared successfully. You are back on the start of the Analysis Phase.</string>
+    <string name="quiz">Quiz</string>
+    <string name="analysis_quiz">Analysis Quiz</string>
+    <string name="design_quiz">Design Quiz</string>
+    <string name="implementation_quiz">Implementation Quiz</string>
+    <string name="deployment_quiz">Deployment Quiz</string>
+    <string name="start_quiz">Start the quiz</string>
+
+    <!-- string constants related to shared prefs for checking if quiz is cleared -->
+    <string name="analysis_quiz_cleared">AnalysisQuizCleared</string>
+    <string name="design_quiz_cleared">DesignQuizCleared</string>
+    <string name="implementation_quiz_cleared">ImplementationQuizCleared</string>
+    <string name="deployment_quiz_cleard">DeploymentQuizCleared</string>
+    <string name="analysis_quiz_1_answered">AnalysisQuiz1Answered</string>
+    <string name="analysis_quiz_2_answered">AnalysisQuiz2Answered</string>
+    <string name="analysis_quiz_3_answered">AnalysisQuiz3Answered</string>
+    <string name="design_quiz_1_answered">DesignQuiz1Answered</string>
+    <string name="design_quiz_2_answered">DesignQuiz2Answered</string>
+    <string name="design_quiz_3_answered">DesignQuiz3Answered</string>
+    <string name="implementation_quiz_1_answered">ImplementationQuiz1Answered</string>
+    <string name="implementation_quiz_2_answered">ImplementationQuiz2Answered</string>
+    <string name="implementation_quiz_3_answered">ImplementationQuiz3Answered</string>
+    <string name="deployment_quiz_1_answered">DeploymentQuiz1Answered</string>
+    <string name="deployment_quiz_2_answered">DeploymentQuiz2Answered</string>
+    <string name="deployment_quiz_3_answered">DeploymentQuiz3Answered</string>
+
+    <!-- string constants related to tutorial -->
+    <string name="quiz_would_start">Normally quiz would start now</string>
+    <!-- string constants related to the notes -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- string constants related to Analysis phase -->
+    <string name="analysisphase">Analysis Phase</string>
+    <string name="analysisdescriptionquestionsarrayprompt">Select : </string>
+
+    <string-array name="analysisdescriptionquestionsarray">
+        <item>Description</item>
+        <item>Question 1</item>
+        <item>Question 2</item>
+        <item>Question 3</item>
+    </string-array>
+
+    <string name="analysislevelclearedmessage">Swipe + Tab feature is unlocked now, Go back to cube for accessing next phase.</string>
+
+    <!-- string constants related to the phase steps -->
+    <string name="analysis_1_description">ADID</string>
+    <string name="analysis_2_description">ADID</string>
+    <string name="analysis_3_description">ADID</string>
+    <string name="analysis_4_description">ADID</string>
+    <string name="analysis_5_description">ADID</string>
+    <string name="analysis_6_description">ADID</string>
+    <string name="analysis_7_description">ADID</string>
+    <string name="analysis_8_description">ADID</string>
+    <string name="analysis_9_description">ADID</string>
+    <string name="analysis_10_description">ADID</string>
+    <string name="design_1_description">ADID</string>
+    <string name="design_2_description">ADID</string>
+    <string name="design_3_description">ADID</string>
+    <string name="design_4_description">ADID</string>
+    <string name="design_5_description">ADID</string>
+    <string name="design_6_description">ADID</string>
+    <string name="design_7_description">ADID</string>
+    <string name="design_8_description">ADID</string>
+    <string name="design_9_description">ADID</string>
+    <string name="design_10_description">ADID</string>
+    <string name="implementation_1_description">ADID</string>
+    <string name="implementation_2_description">ADID</string>
+    <string name="implementation_3_description">ADID</string>
+    <string name="deployment_1_description">ADID</string>
+    <string name="deployment_2_description">ADID</string>
+    <string name="deployment_3_description">ADID</string>
+
+    <!-- string constants related to design phase -->
+    <string name="designphase">Design Phase</string>
+    <string name="design_description_tab_title">Description</string>
+    <string name="design_question1_tab_title">Question 1</string>
+    <string name="design_question2_tab_title">Question 2</string>
+    <string name="design_question3_tab_title">Question 3</string>
+    <string name="helpheading">HELP</string>
+    <string name="questionheading">QUESTION</string>
+    <string name="optionheading">OPTIONS</string>
+    <string name="descriptionheadingtext">DETAILS</string>
+    <string name="noteheadingtext">NOTES</string>
+    <string name="exceptionreadwrite">Read/Write of data failed. Try restarting app.</string>
+    <string name="defaultnotetext">Create and Save your notes</string>
+    <string name="notessavedsuccess">Notes saved successfully</string>
+    <string name="helpbuttontext">Help</string>
+    <string name="descriptionbuttontext">Details</string>
+    <string name="notesbuttontext">Notes</string>
+    <string name="optionAtext">Option A</string>
+    <string name="optionBtext">Option B</string>
+    <string name="optionCtext">Option C</string>
+    <string name="optionDtext">Option D</string>
+    <string name="designfeatureindicatormessage">Use Swipe Gestures to navigate through questions</string>
+    <string name="correctansweralertdialoguetitle">Correct Answer</string>
+    <string name="incorrectansweralertdialoguetitle">Wrong Answer</string>
+    <string name="correctansweralertdialoguemessage">Your answer is correct.</string>
+    <string name="incorrectansweralertdialoguemessage">Your answer is wrong. Please try again.</string>
+    <string name="designlevelclearedmessage">Text-to-speech function is unlocked now. Go back to the cube for accessing next phase.</string>
+
+    <!-- string constants related to implementation phase -->
+    <string name="implementationphase">Implementation Phase</string>
+    <string name="implementation_description_tab_title">Description</string>
+    <string name="implementation_question1_tab_title">Question 1</string>
+    <string name="implementation_question2_tab_title">Question 2</string>
+    <string name="implementation_question3_tab_title">Question 3</string>
+    <string name="texttospeechdisablederrormessage">Google Text to speech is not installed or disabled on your device, Install from Play Store or Enable from device settings. Reading questions feature will not be available</string>
+    <string name="texttospeechinitializationerrormessage">Text to speech failed to initialize, check your device settings</string>
+    <string name="implementationfeatureindicatormessage">Use Play Button to Read Question and Options</string>
+    <string name="mediaplayerinitializationfailed">Media player initialization failed. Reading feature is disabled temporarily. Restart app after some time and check again.</string>
+    <string name="mediaplayerinitializationwait">Please wait till Media player is initialized. Reading feature is disabled temporarily.</string>
+    <string name="mediaplayerinitializationwaitstop">Media player is initialized successfully. Reading feature is enabled.</string>
+    <string name="questionbuttontext">Question</string>
+    <string name="optionbuttontext">Options</string>
+    <string name="playbuttontext">Play</string>
+    <string name="pausebuttontext">Pause</string>
+    <string name="implementationlevelclearedmessage">Voice Input feature is unlocked now, Go back to cube for accessing next phase.</string>
+
+    <!-- General ones -->
+    <string name="levelcleared">Level Cleared</string>
+    <string name="dummyContentDescription">ImageRepresentation</string>
+    <string name="alreadyansweredquestion">You have already answered this question.</string>
+    <string name="germalanguagelocale">de</string>
+    
+
+    <!-- String constants realted to deployment phase -->
+    <string name="deploymentphase">Deployment Phase</string>
+    <string name="deploymentfeatureindicatormessage">Use Microphone button to say your answers</string>
+    <string name="voiceinputbuttontext">Voice</string>
+    <string name="deployment_description_tab_title">Description</string>
+    <string name="deployment_question1_tab_title">Question 1</string>
+    <string name="deployment_question2_tab_title">Question 2</string>
+    <string name="deployment_question3_tab_title">Question 3</string>
+    <string name="deploymentlevelclearedmessage">You have cleared all levels. You are now guru of Software Development Lifecycle Process.</string>
+    <string name="googlevoiceinputdisablederrormessage">Google Voice Input feature is not installed on your device, Install it from Play Store</string>
+    <string name="googlevoiceinputhintmessage">Say either Option A, Option B, Option C or Option D</string>
+    <string name="googlevoiceinvalidoptionsaid">Invalid option, Please try again.</string>
+    <string name="deploymentquestionalreadyanswered">You have already answered this question</string>
+    <string name="sayallstagesclearedmessage">Congratulations, You have learned all the phases of SDLC.</string>
+    <string name="saydeploymentcorrectanswer">Correct Answer</string>
+    <string name="googlevoiceinputdisableddialoguetitle">Install Voice Search?</string>
+    <string name="googlevoiceinputdisableddialogueinstallbutton">Install</string>
+    <string name="googlevoiceinputdisableddialoguecancelbutton">Cancel</string>
+
+</resources>

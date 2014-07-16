@@ -1,0 +1,11 @@
+Die Mitglieder des Projektteams sind für die Erfüllung der vom Projektmanager zugewiesenen Aufgaben verantwortlich. 
+
+Sobald ein System entwickelt, getestet und implementiert worden ist, wird die Betriebs-und Wartungsphase eingeleitet. 
+
+Alle Ressourcen für die Entwicklung und Dokumentation sollten an die IT-Bibliothek- oder die IT-Helpdesk-Mitarbeiter übertragen werden. 
+
+Alle relevanten Dokumente müssen unter Berücksichtigung der durch das Projekt eingeführten Änderungen überprüft und aktualisiert werden. 
+
+Ein Beispiel: Die Report-Dokumentation sollte stets den aktuellen Stand des Berichts (seine Produktionsversion) widerspiegeln. 
+
+Unter welchem Namen ist der organisierte Prozess oder eine Reihe von Schritten, die es braucht um ein Informationssystem zu entwickeln, bekannt?

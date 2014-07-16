@@ -1,0 +1,9 @@
+Das System muss durch eine solide IT-Infrastruktur unterstützt werden, andernfalls können System Abstürze, Fehlfunktionen oder nicht erwartetes Verhalten auftreten. 
+
+Die IT-Infrastruktur muss den Organisations-Bedürfnisse in Bezug auf Zeit, Kosten, technischer Machbarkeit und Flexibilität gerecht werden. 
+
+Eine Organisation untersucht in der Regel mehrere unterschiedliche IT-Infrastrukturen, die aktuelle sowie zukünftige Systemanforderungen erfüllen müssen. 
+
+Die meisten Systeme laufen als Computer-Netzwerk bei dem jeder Arbeitnehmer einen Client hat und die Anwendung auf einem Server läuft. 
+
+Was ist der zweite Schritt in der Entwicklung des System-Lebenszykluses (SDLC)?

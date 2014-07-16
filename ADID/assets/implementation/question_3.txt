@@ -1,0 +1,9 @@
+The Project Manager closes the project and transitions the system to the agency Systems Team once the system is implemented in production and operates in a stable manner.
+
+Activities include: 
+Transition of outstanding requirements to the Systems Team .
+Disbanding of the Development Team and completion of team performance reviews. 
+Resolution of remaining contractor invoicing and contract compliance issues .
+Close out of procurements.
+
+Who spends most of their time in the beginning stages of the SDLC, talking with end-users, gathering information, documenting systems, and proposing solutions?

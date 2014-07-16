@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mustard_gradient_background"
+    android:orientation="vertical"
+    tools:context="at.fhooe.mcm.adid.DeploymentActivity$DeploymentQuestion2Fragment"
+    tools:ignore="NestedWeights" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.8"
+        layout="@layout/reuse_deployment_question_layout" />
+    
+</LinearLayout>

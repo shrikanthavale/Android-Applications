@@ -1,0 +1,17 @@
+In System-Design werden die Design-Funktionen und -Operationen im Detail beschrieben, einschließlich der Bildschirm-Layouts, der Geschäftsregeln, Prozessdiagrammen und anderen Dokumentationen. Am Ende dieser Phase wird das neue System als eine Sammlung von Modulen oder Untersysteme beschrieben.
+
+Die Design-Phase hat als Initial-Daten die im Anforderungsdokument identifizierten Anforderungen. Für jede Anforderung wird ein Set von einem oder mehreren Design-Elementen als Ergebnis von Interviews, Workshops und / oder Prototyp-Eindrücke hergestellt.
+
+Design-Elemente beschreiben die gewünschten Systemfunktionen im Detail und in allgemeinen Funktions-Hierarchie-Diagrammen, Bildschirm-Layout-Diagrammen, Tabellen von Geschäftsregeln, Geschäftsprozess-Diagrammen, Pseudocode und einem vollständigen Entity-Relationship-Diagramm mit einem vollständigen Datenwörterbuch. Diese Design-Elemente sollen das System ausreichend detailliert beschreiben, so dass qualifizierte Entwickler und Ingenieure das System mit minimalen zusätzlichen weiteren Designs entwickeln können.
+
+Aktivitäten in Design-Phase sind:
+Fangen Sie an Design-Konzepte und Metaphern zu brainstormen
+Entwickeln von Ansichten- und Navigations-Modellen,
+Das Design-Konzept durchgehen
+Design mit Papier und Stift beginnen
+Einfache Prototypen schaffen
+Usability-Tests von einfachen Prototypen durchführen
+Detailliertes Design schaffen
+Erneurt Usability-Tests durchführen
+Standards und Richtlinien dokumentieren
+Design-Spezifikation erstellen

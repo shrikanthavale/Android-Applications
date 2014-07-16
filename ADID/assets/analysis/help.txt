@@ -1,0 +1,7 @@
+In the analysis phase of Software development life cycle, you don't have any features. You will unlock the features as you move ahead through each phase of the application.
+
+As you can see in this phase, you have to answer all three questions correctly using the description given. Once you have answered all the questions correctly, Swipe + Tab feature will be unlocked.
+
+This feature can be used in next phase while answering questions in the that phase of the application. The next phase will be unlocked after you succesfully answered all three quiz questions
+
+Wish you luck !!!!!!!!!!!

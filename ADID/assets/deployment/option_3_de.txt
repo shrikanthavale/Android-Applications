@@ -1,0 +1,5 @@
+Analytischer Zyklus 
+Design-Zyklus 
+System-Entwicklungs-Lebenszyklus 
+Programm-Spezifikation
+Answer:3

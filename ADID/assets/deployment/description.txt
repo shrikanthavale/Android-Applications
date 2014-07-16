@@ -1,0 +1,14 @@
+The deployment phase contains two stages, a three to six month pilot followed by a national deployment. At the conclusion of the pilot, the finished application is placed on a production server.
+ 
+Users are trained, user guides are delivered, and the system is distributed nationally. After successful testing the product is delivered / deployed to the customer for their use.
+
+In this phase, the system or system modifications are made operational in a production environment. The phase is initiated after the system has been tested and accepted by the user.
+
+Activities in this phase include notification to end users, execution of previously defined training plan, data entry or conversion, and post deployment review.
+
+Regardless of the type of system, all aspects of the deployment phase should be followed. This will ensure the smoothest possible transition to the organization’s desired goal.   
+
+Activities involved in Deployment Phase are:
+Use surveys to get user feedback
+Conduct field studies to get info about actual use
+Check objectives using usability testing.
