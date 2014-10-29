@@ -1,5 +1,0 @@
-Delivered System
-Test Cases
-Release/Version Description Document
-Post deployment review
-Answer:2

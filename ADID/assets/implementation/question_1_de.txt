@@ -1,5 +1,0 @@
-Ein erfolgreicher Abschluss der Implementierungsphase sollten folgendes umfassen: System-Entwicklung und die Beseitigung von Mängeln sofort während der Entwicklung. 
-
-Der Zweck der Implementierungsphase ist es, Algorithmen in Programme für das neue Informationssystem zu konvertieren. 
-
-Die Übersetzung der Algorithmus in einer Programmiersprache tritt bei welcher Stufe des SDLC auf?

@@ -1,7 +1,0 @@
-In der Analyse-Phase des Software-Lebenszykluses stehen Ihnen noch nicht alle Features zur Verfügung. Sie schalten die Funktionen während der Bewältigung des System-Lebenszykluses frei. 
-
-Wie Sie in dieser Phase sehen können, müssen Sie alle drei Fragen anahnd der zur Verfügung gestellten Hinweise richtig beantworten. Wenn Sie alle Fragen richtig beantwortet haben, wird das Swipe + Tab-Feature freigeschaltet. 
-
-Diese Funktion kann in der nächsten Phase verwendet werden um die Fragen dieser Phase zu beantworten. Die nächste Phase wird freigeschaltet, sobald alle drei Quiz-Fragen richtig beantwortet wurden. 
-
-Wünsche Ihnen viel Glück!!!!

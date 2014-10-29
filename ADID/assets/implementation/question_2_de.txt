@@ -1,6 +1,0 @@
-Wenn die Implementierungsphase abgeschlossen ist beginnt das System seine Arbeit und macht diese so lange bis die Organisation bestimmt, dass es sich überlebt hat und Planungen für ein 
-Ersatzsystem beginnen. 
-
-Die Abnahme der in der Implementierungsphase zu erbringenden Leistungen, die Fertigstellung der Implementierung des Projektstatus zu überprüfen und die Ausführung der Projektabschluss-Aktivitäten bedeuten das Ende der Implementierungsphase. 
-
-Die Übersetzung der Problemstellung als eine Reihe von aufeinanderfolgenden Schritten, die das Programm tun muss zu beschreiben ist unter welcher Bezeichnung bekannt?

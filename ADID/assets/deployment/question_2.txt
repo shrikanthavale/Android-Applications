@@ -1,7 +1,0 @@
-The project manager is responsible and accountable for the successful execution of the DEPLOYMENT Phase.
-
-The project manager is responsible for leading the team that accomplishes the tasks shown above.
-
-The project manager is also responsible for reviewing deliverables for accuracy, approving deliverables and providing status reports to management.
-
-Which of the following deliverables are not part of deployment phase?

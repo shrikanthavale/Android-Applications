@@ -1,5 +1,0 @@
-Dokumentation 
-Flussdiagramme
-Programm-Spezifikation 
-Designs
-Answer:3

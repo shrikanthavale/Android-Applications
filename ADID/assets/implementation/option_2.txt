@@ -1,5 +1,0 @@
-Coding
-Debugging
-Creating the algorithm
-Writing documentation
-Answer:3

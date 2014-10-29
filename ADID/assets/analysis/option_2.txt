@@ -1,5 +1,0 @@
-Analyze, design, develop, test, evaluate, implement, document
-Analyze, design, test, develop, document, implement, evaluate
-Design, Analyze, develop, document, implement, test, evaluate
-Analyze, design, develop, test, document, implement, evaluate
-Answer:4

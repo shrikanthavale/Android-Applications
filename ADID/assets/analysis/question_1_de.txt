@@ -1,7 +1,0 @@
-Es gibt eine Vielzahl von Techniken, die verwendet werden können, um die Anforderungen zu sammeln, aber einige wichtige Punkte an die gedacht werden müssen sind, dass die Forderungen systematisch, überprüfbar, auf identifizierte Geschäfts-Erfordernisse oder -Möglichkeiten bezogen ist und zu einem Detailgrad definiert ist, der ausreichend für das Design des Systems ist. 
-
-Sobald Stakeholder identifiziert wurden sollte ein Kickoff-Meeting stattfinden um sicherzustellen, dass jeder auf dem selben Wissenstand ist und um notwendige Kommunikations-Kanäle zu schaffen. 
-
-Sobald diese erfolgt ist, kann die vollständige Erfassung und Analyse der Anforderungen beginnen. Beachten Sie aber, dass noch weitere Stakeholder zu einem späteren Zeitpunkt des SDLC identifiziert werden können. 
-
-Was ist der erste Schritt in der Entwicklung der System-Lebenszykluses (SDLC)?

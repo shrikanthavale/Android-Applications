@@ -1,9 +1,0 @@
-In the design phase of Software development life cycle, you have already unlocked one feature of the application.
-
-As you can see above swipe+tab feature is unlocked and you can use swipe gestures to read description and solve questions.
-
-In this phase with correct solutions you can unlock text to voice feature of the application which will help you in voice reading questions and options in the next phase.
-
-Each question that you answer will take one step closer to unlocking the feature, which can be seen in the above representations.
-
-Wish you luck !!!!!!!!!!!

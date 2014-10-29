@@ -1,5 +1,0 @@
-Die Aufgaben in der Bereitstellungs-Phase beinhalten den Zeitplan für die Bereitstellung, eine kurze Beschreibung der Vorteile des neuen Systems und der Differenz zwischen dem alten und neuen System. 
-
-Eine Mitteilung an die Nutzer sollte die den Endbenutzer betreffendn Veränderungen sowie Support-Informationen, einschließlich Kontaktnamen und Telefonnummern, enthalten.
-
-Verbesserungen, Upgrades und Bugfixes werden in welcher Phase des SDLC durchgeführt?

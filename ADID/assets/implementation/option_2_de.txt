@@ -1,5 +1,0 @@
-Verschlüsselung 
-Debugging
-Erstellen des Algorithmus
-Schreiben der Dokumentation
-Answer:3

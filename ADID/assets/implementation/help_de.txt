@@ -1,9 +1,0 @@
-In der Implementierungs-Phase des Software-Lebenszyklus haben Sie folgende zwei Funktionen freigeschaltet: Swipe + Tab und Text-to-Speech. 
-
-Wie Sie oben sehen, können Sie jetzt Swipe Gesten zum Navigieren durch die Fragen nutzen und sich die Fragen und Auswahl-Möglichkeiten vorlesen lassen. 
-
-In dieser Phase können Sie mit den richtigen Lösungen die SPracheingabe freischalten. 
-
-Jede Frage, die Sie beantworten bringt Sie einen Schritt näher zur Freischaltung der Funktionen, die in den obigen Darstellungen gesehen werden können. 
-
-Viel Glück!!!!

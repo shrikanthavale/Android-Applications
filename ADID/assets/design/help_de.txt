@@ -1,9 +1,0 @@
-In der Designphase des Software-Entwicklungs-Lebenszyklus haben Sie bereits ein Feature der Anwendung freigeschaltet. 
-
-Wie Sie oben sehen können ist die Swipe + Tab-Funktion freigeschaltet und Sie können Swipe-Gesten verwenden, um die Beschreibungen zu lesen und Fragen zu lösen. 
-
-In dieser Phase können Sie mit richtigen Anworten die Vorlese-Funktion freischalten. 
-
-Jede Frage die Sie beantworten bringt Sie einen Schritt näher zur Freischaltung der Funktionen die Sie in den obigen Darstellungen sehen können. 
-
-Viel Glück!!!!

@@ -1,9 +1,0 @@
-The system must be supported by a solid IT infrastructure or chances are the system will crash, malfunction, or not perform as expected.
-
-The IT infrastructure must meet the organization needs in terms of time, cost, technical feasibility, and flexibility.
-
-An organization typically explores several different IT infrastructures that must meet current as well as future system needs.
-
-Most systems run on a computer network with each employee having a client and the application running on a server. 
-
-The make-or-buy decision is associated with what step in the SDLC?

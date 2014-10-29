@@ -1,9 +1,0 @@
-Focus on the capabilities needed by the stake holders and why these needs exist. Pay special attention to "what" the project should accomplish not "how" it should accomplish it.
-
-The Vision should also include the scope, features and environment of the project, as well as the precedence and priority of the features.
-
-Create a Glossary of terminology specific to the project. Be sure to include all abbreviations, acronyms, business terms and technical terms. 
-
-Identify the behavior the system needs to exhibit to provide the capabilities requested by the stake holders. Common practices include Use Case Modeling and Business Process Modeling.
-
-In the Analysis phase, the development of the ____________ occurs, which is a clear statement of the goals and objectives of the project.

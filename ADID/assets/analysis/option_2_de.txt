@@ -1,5 +1,0 @@
-Analyse, Design, Entwicklung, Testen, Bewertung, Implementierung, Dokumentierung
-Analyse, Design, Testen, Entwicklung, Dokumentierung, Implementierung, Bewertung
-Design, Analyse, Entwicklung, Dokumentierung, Implementierung, Testen, Bewertung 
-Analyse, Design, Entwicklung, Testen, Dokumentierung, Implementierung, Bewertung
-Answer:4

@@ -1,8 +1,0 @@
-There are a variety of techniques that can be used to gather the requirements, but some key points to remember are that the requirements must be systematic, verifiable, related to identified business needs or opportunities, and defined to a level of detail sufficient for system design.
-
-Once stake holders have been identified, a Kickoff meeting should be held to ensure everyone is starting on the same page, and to help establish communication channels between the necessary groups.
-
-As soon as this occurs the gathering and analysis of the requirements can begin in full. Keep in mind though, that more stake holders may be identified as the process moves forward.
-
-What is the first step in the systems development life cycle (SDLC)?
-

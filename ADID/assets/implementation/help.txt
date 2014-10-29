@@ -1,9 +1,0 @@
-In the implementation phase of Software development life cycle, you have two features unlocked Swipe+Tab and Text to speech.
-
-As you can see in above now you can use swipe gestures and navigate through questions and device will read out question and options for you.
-
-In this phase with correct solutions you can unlock Voice Command feature of the application which will help you in answering questions by just speaking into device, which can be used in last phase.
-
-Each question that you answer will take one step closer to unlocking the feature, which can be seen in the above representations.
-
-Wish you luck !!!!!!!!!!!
