@@ -1,0 +1,5 @@
+Successful completion of the Implementation Phase should comprise: System development and fixing any immediate defects during development.
+ 
+The purpose of the Implementation Phase is to convert algorithm into working programs for the new information system to be deployed in the production environment.
+
+Translating the algorithm into a programming language occurs at the which step of the SDLC?

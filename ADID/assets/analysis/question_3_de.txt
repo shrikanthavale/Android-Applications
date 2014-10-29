@@ -1,0 +1,9 @@
+Konzentrieren Sie sich auf die Features, die von den Interessengruppen gebraucht werden und warum diese Bedürfnisse bestehen. Achten Sie besonders darauf "was" das Projekt leisten soll und nicht "wie" diese zu erreichen sind.
+
+Die Vision sollte auch den Umfang, die Merkmale und das Umfeld des Projekts sowie die Rangfolge und Priorität der Funktionen enthalten. 
+
+Erstellen Sie ein Glossar der Terminologie des Projekts. Achten Sie darauf, dass alle Abkürzungen, Akronyme, Geschäftsbedingungen und Fachbegriffe enthalten sind. 
+
+Identifizieren Sie das vom System geforderte Verhalten um die von den Interessengruppen angefordert Funktionen zu bieten. Zu den üblichen Praktiken gehören Use-Case-Modellierung und Business-Prozess-Modeling. 
+
+In der Analyse-Phase wird durch die Entwicklung der/des ____________ eine klare Aussage über die Ziele des Projektes gemacht.

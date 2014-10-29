@@ -1,0 +1,9 @@
+Der Projektmanager beendet das Projekt und das System wird an das Systems-Team weitergereicht, sobald das System in stabiler Weise umgesetzt wurde. 
+
+Die Aktivitäten umfassen: 
+Übergabe von ausstehende Anforderungen an das Systems-Team. 
+Auflösung des Entwicklungs-Teams und Fertigstellung der Teamleistungs-Bewertungen. 
+Auflösung der verbleibenden Vertragsrechnungsstellung und Fragen zur EInhaltung des Vertrags. 
+Besorgungen abschliessen
+
+Wer verbringt die meiste Zeit in der Anfangsphase des SDLC mit Gesprächen mit Benuttern, dem Sammeln von Informationen, der System-Dokumentation und dem Vorschlagen von Lösungen?
