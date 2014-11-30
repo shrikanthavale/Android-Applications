@@ -336,7 +336,6 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int id) {
-						resetAllCurrentGameProgress();
 						dialog.dismiss();
 					}
 				});
@@ -347,6 +346,7 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 					@Override
 					public void onClick(DialogInterface dialog, int id) {
 						resetAllCurrentGameProgress();
+						finish();
 						Intent intent = new Intent(getApplicationContext(),
 								StartPageActivity.class);
 						startActivity(intent);
