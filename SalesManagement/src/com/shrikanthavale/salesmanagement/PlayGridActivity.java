@@ -929,7 +929,7 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 				+ getResources().getString(R.string.spacestring);
 
 		if (moneyEarned == 0) {
-			text = text + getResources().getString(R.string.fivezerostring);
+			text = text + getResources().getString(R.string.fourzerostring);
 		} else {
 			text = text + moneyEarned;
 		}
@@ -1018,6 +1018,13 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 	 */
 	public void setNodeMaxAmountMap(Map<String, Integer> nodeMaxAmountMap) {
 		this.nodeMaxAmountMap = nodeMaxAmountMap;
+	}
+
+	/**
+	 * @return the nodeHolder
+	 */
+	public NodeHolder getNodeHolder() {
+		return nodeHolder;
 	}
 
 }

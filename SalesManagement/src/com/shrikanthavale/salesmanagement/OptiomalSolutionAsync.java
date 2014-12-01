@@ -62,7 +62,7 @@ public class OptiomalSolutionAsync extends
 		this.optimalSolutionActivity = mainActivity;
 		weightedCustomerGraph = new WeightedCustomerGraph();
 		progressBar = new ProgressDialog(mainActivity);
-		progressBar.setMessage("Generating Travel Path .... Please Wait");
+		progressBar.setMessage(mainActivity.getResources().getString(R.string.generatingtravelpathmessage));
 		progressBar.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 	}
 
