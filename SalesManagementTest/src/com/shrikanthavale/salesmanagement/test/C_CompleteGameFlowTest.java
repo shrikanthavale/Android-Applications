@@ -79,8 +79,8 @@ public class C_CompleteGameFlowTest extends
 		while (counter < 3) {
 
 			int randomNumber = (int) (Math.random() * (5 - 1)) + 1;
-			System.out.println("****************"+randomNumber);
-			
+			System.out.println("****************" + randomNumber);
+
 			switch (randomNumber) {
 			case 1:
 				robotiumSolo
@@ -89,6 +89,12 @@ public class C_CompleteGameFlowTest extends
 				robotiumSolo
 						.clickOnView(robotiumSolo
 								.getView(com.shrikanthavale.salesmanagement.R.id.leftNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.downNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.rightNavigation));
 				break;
 			case 2:
 				robotiumSolo
@@ -97,7 +103,19 @@ public class C_CompleteGameFlowTest extends
 				robotiumSolo
 						.clickOnView(robotiumSolo
 								.getView(com.shrikanthavale.salesmanagement.R.id.downNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.upNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.leftNavigation));
 			case 3:
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.rightNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.downNavigation));
 				robotiumSolo
 						.clickOnView(robotiumSolo
 								.getView(com.shrikanthavale.salesmanagement.R.id.leftNavigation));
@@ -111,6 +129,12 @@ public class C_CompleteGameFlowTest extends
 				robotiumSolo
 						.clickOnView(robotiumSolo
 								.getView(com.shrikanthavale.salesmanagement.R.id.rightNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.leftNavigation));
+				robotiumSolo
+						.clickOnView(robotiumSolo
+								.getView(com.shrikanthavale.salesmanagement.R.id.upNavigation));
 			default:
 				break;
 			}
@@ -137,12 +161,12 @@ public class C_CompleteGameFlowTest extends
 
 			} else if (((PlayGridActivity) robotiumSolo.getCurrentActivity())
 					.getVisitedCustomers().contains(focusedButton.getId())) {
-				
+
 				assertTrue(
 						"Visited Customer node clicked error message missing",
 						robotiumSolo.searchText(robotiumSolo
 								.getString(R.string.alreadyvisitednode)));
-				
+
 				continue;
 
 			} else {
