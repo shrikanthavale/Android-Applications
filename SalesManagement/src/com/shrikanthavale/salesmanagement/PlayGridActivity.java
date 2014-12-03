@@ -1027,4 +1027,11 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 		return nodeHolder;
 	}
 
+	/**
+	 * @return the visitedCustomers
+	 */
+	public List<Integer> getVisitedCustomers() {
+		return visitedCustomers;
+	}
+
 }
