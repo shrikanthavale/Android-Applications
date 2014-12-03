@@ -139,6 +139,13 @@ public class C_CompleteGameFlowTest extends
 				break;
 			}
 
+			if (((PlayGridActivity) robotiumSolo.getCurrentActivity())
+					.checkSufficientTimeCustomerTravel()
+					|| ((PlayGridActivity) robotiumSolo.getCurrentActivity())
+							.checkSufficientTimeCustomerVisit()) {
+				break;
+			}
+
 			robotiumSolo
 					.clickOnView(robotiumSolo
 							.getView(com.shrikanthavale.salesmanagement.R.id.confirmSelection));
@@ -215,5 +222,4 @@ public class C_CompleteGameFlowTest extends
 				robotiumSolo
 						.waitForActivity(com.shrikanthavale.salesmanagement.OptimalSolutionActivity.class));
 	}
-
 }

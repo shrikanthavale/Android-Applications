@@ -944,7 +944,7 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 	 * 
 	 * @return true/false
 	 */
-	private boolean checkSufficientTimeCustomerTravel() {
+	public boolean checkSufficientTimeCustomerTravel() {
 		return hours == 4;
 	}
 
@@ -953,7 +953,7 @@ public class PlayGridActivity extends Activity implements OnClickListener {
 	 * 
 	 * @return true/false
 	 */
-	private boolean checkSufficientTimeCustomerVisit() {
+	public boolean checkSufficientTimeCustomerVisit() {
 		return ((hours == 3 && minutes == 45) || hours == 4);
 	}
 
