@@ -3,7 +3,6 @@ package at.fhooe.mcm.it.adid.controller.activities.analysis;
 import java.util.List;
 import java.util.Locale;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
