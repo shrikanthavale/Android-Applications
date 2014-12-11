@@ -10,13 +10,13 @@ import android.content.pm.PackageManager;
 import android.test.ActivityInstrumentationTestCase2;
 import android.view.Display;
 
-public class RandomTest_A extends ActivityInstrumentationTestCase2<StartPageActivity> {
+public class RandomTest extends ActivityInstrumentationTestCase2<StartPageActivity> {
 	
 	private static final int NUM_EVENTS = 400;
 	private static final String packageToTest = "com.shrikanthavale.salesmanagement";
 	private Solo robotiumSolo;
 	
-	public RandomTest_A(){
+	public RandomTest(){
 		super(StartPageActivity.class);
 	}
 
