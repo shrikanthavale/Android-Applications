@@ -12,7 +12,7 @@ import android.view.Display;
 
 public class RandomTest_A extends ActivityInstrumentationTestCase2<StartPageActivity> {
 	
-	private static final int NUM_EVENTS = 500;
+	private static final int NUM_EVENTS = 400;
 	private static final String packageToTest = "com.shrikanthavale.salesmanagement";
 	private Solo robotiumSolo;
 	
