@@ -6,6 +6,8 @@ package com.shrikanthavale.salesmanagement.test;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.junit.Ignore;
+
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.Button;
 
@@ -20,6 +22,7 @@ import com.shrikanthavale.salesmanagement.StartPageActivity;
  * @author Shrikant Havale
  * 
  */
+@Ignore
 public class B_PlayGridActivityTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 

@@ -3,7 +3,10 @@
  */
 package com.shrikanthavale.salesmanagement.test;
 
+import org.junit.Ignore;
+
 import android.test.ActivityInstrumentationTestCase2;
+
 import com.robotium.solo.Solo;
 import com.shrikanthavale.salesmanagement.PlayGridActivity;
 import com.shrikanthavale.salesmanagement.StartPageActivity;
@@ -14,6 +17,7 @@ import com.shrikanthavale.salesmanagement.R;
  * @author Shrikant Havale
  *
  */
+@Ignore
 public class A_StartPageActivityTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 	
@@ -54,7 +58,6 @@ public class A_StartPageActivityTest extends
 	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
 	    // click on start button
 	    robotiumSolo.clickOnButton(0);
-		robotiumSolo.clickOnButton(0);
 		robotiumSolo.waitForDialogToOpen();
 		assertTrue("Loading Dialogue Missing",
 				robotiumSolo
