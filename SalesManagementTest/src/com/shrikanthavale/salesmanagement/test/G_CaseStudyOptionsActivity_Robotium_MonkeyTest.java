@@ -21,7 +21,7 @@ import eu.fbk.se.androidmonkey.Monkey;
  * @author Shrikant Havale
  * 
  */
-public class F_CaseStudyDescriptionActivity_MonkeyTest extends
+public class G_CaseStudyOptionsActivity_Robotium_MonkeyTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 
 	/**
@@ -34,7 +34,7 @@ public class F_CaseStudyDescriptionActivity_MonkeyTest extends
 	/**
 	 * @param name
 	 */
-	public F_CaseStudyDescriptionActivity_MonkeyTest() {
+	public G_CaseStudyOptionsActivity_Robotium_MonkeyTest() {
 		super(StartPageActivity.class);
 	}
 
@@ -240,9 +240,6 @@ public class F_CaseStudyDescriptionActivity_MonkeyTest extends
 
 			} else {
 				robotiumSolo.waitForDialogToOpen();
-				assertTrue("Loading Dialogue Missing",
-						robotiumSolo
-								.waitForText("Loading Description Details .... Please Wait"));
 				robotiumSolo.waitForDialogToClose();
 				assertTrue(
 						"com.shrikanthavale.salesmanagement.CaseStudyDescriptionActivity is not found!",
@@ -252,6 +249,39 @@ public class F_CaseStudyDescriptionActivity_MonkeyTest extends
 
 			}
 		}
+		
+		robotiumSolo.clickOnView(robotiumSolo.getView(R.id.scrollView1));
+		robotiumSolo.scrollDown();
+		robotiumSolo.scrollUp();
+		robotiumSolo.scrollDown();
+		robotiumSolo.scrollUp();
+		
+		robotiumSolo
+				.clickOnView(robotiumSolo
+						.getView(com.shrikanthavale.salesmanagement.R.id.optionsNavigate));
+		robotiumSolo.waitForDialogToOpen();
+		assertTrue(
+				"Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading Option Details .... Please Wait"));
+		robotiumSolo.waitForDialogToClose();
+		assertTrue(
+				"com.shrikanthavale.salesmanagement.CaseStudyDescriptionActivity is not found!",
+				robotiumSolo
+						.waitForActivity(com.shrikanthavale.salesmanagement.CaseStudyOptionsActivity.class));
+		
+		robotiumSolo.clickOnView(robotiumSolo.getView(R.id.scrollViewOptions));
+		robotiumSolo.scrollDown();
+		robotiumSolo.scrollUp();
+		robotiumSolo.scrollDown();
+		robotiumSolo.scrollUp();
+		
+		robotiumSolo.clickOnRadioButton(0);
+		robotiumSolo.clickOnRadioButton(1);
+		robotiumSolo.clickOnRadioButton(2);
+		robotiumSolo.clickOnRadioButton(3);
+		
+		robotiumSolo.clickOnRadioButton(1);
 
 		Display display = robotiumSolo.getCurrentActivity().getWindowManager().getDefaultDisplay();
 		Instrumentation inst = getInstrumentation();

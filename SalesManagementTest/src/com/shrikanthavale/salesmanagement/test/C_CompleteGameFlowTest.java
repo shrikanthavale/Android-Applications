@@ -70,6 +70,11 @@ public class C_CompleteGameFlowTest extends
 		robotiumSolo
 				.clickOnView(robotiumSolo
 						.getView(com.shrikanthavale.salesmanagement.R.id.startPageStartButton));
+		robotiumSolo.waitForDialogToOpen();
+		assertTrue("Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading Node Details .... Please Wait"));
+		robotiumSolo.waitForDialogToClose();
 		assertTrue(
 				"com.shrikanthavale.salesmanagement.PlayGridActivity is not found!",
 				robotiumSolo
@@ -237,10 +242,6 @@ public class C_CompleteGameFlowTest extends
 
 			} else {
 				robotiumSolo.waitForDialogToOpen();
-				assertTrue(
-						"Loading Dialogue Missing",
-						robotiumSolo
-								.waitForText("Loading Description Details .... Please Wait"));
 				robotiumSolo.waitForDialogToClose();
 				assertTrue(
 						"com.shrikanthavale.salesmanagement.CaseStudyDescriptionActivity is not found!",
@@ -310,5 +311,22 @@ public class C_CompleteGameFlowTest extends
 				"com.shrikanthavale.salesmanagement.OptimalSolutionActivity is not found!",
 				robotiumSolo
 						.waitForActivity(com.shrikanthavale.salesmanagement.OptimalSolutionActivity.class));
+		
+		robotiumSolo
+		.clickOnView(robotiumSolo
+				.getView(com.shrikanthavale.salesmanagement.R.id.optimalSolutionBackButton));
+		robotiumSolo.waitForDialogToOpen();
+		assertTrue("Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading Node Details .... Please Wait"));
+		robotiumSolo.waitForDialogToClose();
+		
+	    robotiumSolo.goBack();
+	    robotiumSolo.waitForDialogToOpen();
+	    robotiumSolo.clickOnButton("Yes");
+	    robotiumSolo.waitForDialogToClose();
+	    robotiumSolo.waitForActivity(StartPageActivity.class);
+	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
+		
 	}
 }

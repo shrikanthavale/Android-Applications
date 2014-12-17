@@ -17,7 +17,7 @@ import eu.fbk.se.androidmonkey.Monkey;
  * @author Shrikant Havale
  *
  */
-public class D_StartPageActivity_MonkeyTest extends
+public class D_StartPageActivity_Robotium_MonkeyTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 
 	/**
@@ -30,7 +30,7 @@ public class D_StartPageActivity_MonkeyTest extends
 	/**
 	 * @param name
 	 */
-	public D_StartPageActivity_MonkeyTest() {
+	public D_StartPageActivity_Robotium_MonkeyTest() {
 		super(StartPageActivity.class);
 	}
 
