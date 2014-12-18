@@ -3,21 +3,18 @@
  */
 package com.shrikanthavale.salesmanagement.test;
 
-import org.junit.Ignore;
-
 import android.test.ActivityInstrumentationTestCase2;
 
 import com.robotium.solo.Solo;
 import com.shrikanthavale.salesmanagement.PlayGridActivity;
+import com.shrikanthavale.salesmanagement.R;
 import com.shrikanthavale.salesmanagement.StartPageActivity;
 import com.shrikanthavale.salesmanagement.administration.AdministrationActivity;
-import com.shrikanthavale.salesmanagement.R;
 
 /**
  * @author Shrikant Havale
  *
  */
-@Ignore
 public class A_StartPageActivityTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 	
