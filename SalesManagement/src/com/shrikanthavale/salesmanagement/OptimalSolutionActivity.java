@@ -65,6 +65,8 @@ public class OptimalSolutionActivity extends Activity {
 					@Override
 					public void onClick(View v) {
 
+						finish();
+						
 						// start the activity play area again
 						Intent intent = new Intent(getApplicationContext(),
 								PlayGridActivity.class);
@@ -93,6 +95,8 @@ public class OptimalSolutionActivity extends Activity {
 	@Override
 	public void onBackPressed() {
 
+		finish();
+		
 		// on back pressed start new playing activity
 		Intent intent = new Intent(getApplicationContext(),
 				PlayGridActivity.class);

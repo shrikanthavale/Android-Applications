@@ -3,7 +3,10 @@
  */
 package com.shrikanthavale.salesmanagement.test;
 
+import android.app.Instrumentation;
+import android.content.pm.PackageManager;
 import android.test.ActivityInstrumentationTestCase2;
+import android.view.Display;
 import android.widget.Button;
 
 import com.robotium.solo.Solo;
@@ -12,22 +15,26 @@ import com.shrikanthavale.salesmanagement.PlayGridActivity;
 import com.shrikanthavale.salesmanagement.R;
 import com.shrikanthavale.salesmanagement.StartPageActivity;
 
+import eu.fbk.se.androidmonkey.Monkey;
+
 /**
  * @author Shrikant Havale
  * 
  */
-public class C_CompleteGameFlowTest extends
+public class E_AdministrationActivity_Robotium_MonkeyTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 
 	/**
 	 * Robotium solo object
 	 */
 	private Solo robotiumSolo;
+	private static final int NUM_EVENTS = 400;
+	private static final String packageToTest = "com.shrikanthavale.salesmanagement";
 
 	/**
 	 * @param name
 	 */
-	public C_CompleteGameFlowTest() {
+	public E_AdministrationActivity_Robotium_MonkeyTest() {
 		super(StartPageActivity.class);
 	}
 
@@ -67,11 +74,6 @@ public class C_CompleteGameFlowTest extends
 		robotiumSolo
 				.clickOnView(robotiumSolo
 						.getView(com.shrikanthavale.salesmanagement.R.id.startPageStartButton));
-		robotiumSolo.waitForDialogToOpen();
-		assertTrue("Loading Dialogue Missing",
-				robotiumSolo
-						.waitForText("Loading Node Details .... Please Wait"));
-		robotiumSolo.waitForDialogToClose();
 		assertTrue(
 				"com.shrikanthavale.salesmanagement.PlayGridActivity is not found!",
 				robotiumSolo
@@ -195,8 +197,7 @@ public class C_CompleteGameFlowTest extends
 							.checkSufficientTimeCustomerVisit()) {
 				robotiumSolo.sendKey(Solo.MENU);
 				robotiumSolo.sleep(1000);
-				robotiumSolo.waitForText(robotiumSolo
-						.getString(R.string.refreshGrid));
+				robotiumSolo.waitForText(robotiumSolo.getString(R.string.refreshGrid));
 				robotiumSolo.clickOnActionBarItem(R.id.refresh_game);
 				robotiumSolo.waitForDialogToOpen();
 				robotiumSolo.clickOnButton(robotiumSolo
@@ -248,7 +249,7 @@ public class C_CompleteGameFlowTest extends
 
 			}
 		}
-
+		
 		robotiumSolo.clickOnView(robotiumSolo.getView(R.id.scrollView1));
 		robotiumSolo.scrollDown();
 		robotiumSolo.scrollUp();
@@ -280,50 +281,15 @@ public class C_CompleteGameFlowTest extends
 		robotiumSolo.clickOnRadioButton(2);
 		
 		robotiumSolo.clickOnRadioButton(1);
-		
-		robotiumSolo
-		.clickOnView(robotiumSolo
-				.getView(com.shrikanthavale.salesmanagement.R.id.submitSoultionButton));
-		assertTrue("No Explanation Message Displayed", robotiumSolo.getText(2)!=null && !robotiumSolo.getText(2).getText().equals("") );
-		robotiumSolo.sleep(1000);
 
-		robotiumSolo
-		.clickOnView(robotiumSolo
-				.getView(com.shrikanthavale.salesmanagement.R.id.continuePlayArea));
-		
-		robotiumSolo.waitForDialogToOpen();
-		assertTrue("Loading Dialogue Missing",
-				robotiumSolo
-						.waitForText("Loading Node Details .... Please Wait"));
-		robotiumSolo.waitForDialogToClose();
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", PlayGridActivity.class);
-		
-		
-		robotiumSolo
-				.clickOnActionBarItem(com.shrikanthavale.salesmanagement.R.id.stop_game);
-		robotiumSolo.waitForDialogToOpen(2000);
-		robotiumSolo.clickOnView(robotiumSolo.getView(android.R.id.button1));
-		assertTrue(
-				"com.shrikanthavale.salesmanagement.OptimalSolutionActivity is not found!",
-				robotiumSolo
-						.waitForActivity(com.shrikanthavale.salesmanagement.OptimalSolutionActivity.class));
-		
-		robotiumSolo
-		.clickOnView(robotiumSolo
-				.getView(com.shrikanthavale.salesmanagement.R.id.optimalSolutionBackButton));
-		robotiumSolo.waitForDialogToOpen();
-		assertTrue("Loading Dialogue Missing",
-				robotiumSolo
-						.waitForText("Loading Node Details .... Please Wait"));
-		robotiumSolo.waitForDialogToClose();
-		
-//	    robotiumSolo.goBack();
-//	    robotiumSolo.waitForDialogToOpen();
-//	    robotiumSolo.clickOnButton("Yes");
-//	    robotiumSolo.waitForDialogToClose();
-//	    robotiumSolo.waitForActivity(StartPageActivity.class);
-//	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
-//	 
-//	    robotiumSolo.sleep(2000);
+		Display display = robotiumSolo.getCurrentActivity().getWindowManager().getDefaultDisplay();
+		Instrumentation inst = getInstrumentation();
+		PackageManager pm = robotiumSolo.getCurrentActivity().getPackageManager();
+
+		Monkey monkey = new Monkey(display, packageToTest, inst, pm);
+
+		for (int i = 0; i < NUM_EVENTS; i++) {
+			monkey.nextRandomEvent();
+		}
 	}
 }

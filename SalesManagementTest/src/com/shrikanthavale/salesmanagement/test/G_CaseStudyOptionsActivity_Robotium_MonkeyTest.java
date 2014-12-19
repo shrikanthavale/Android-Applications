@@ -279,7 +279,6 @@ public class G_CaseStudyOptionsActivity_Robotium_MonkeyTest extends
 		robotiumSolo.clickOnRadioButton(0);
 		robotiumSolo.clickOnRadioButton(1);
 		robotiumSolo.clickOnRadioButton(2);
-		robotiumSolo.clickOnRadioButton(3);
 		
 		robotiumSolo.clickOnRadioButton(1);
 

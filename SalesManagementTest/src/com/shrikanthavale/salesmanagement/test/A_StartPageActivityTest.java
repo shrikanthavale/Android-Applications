@@ -17,7 +17,7 @@ import com.shrikanthavale.salesmanagement.administration.AdministrationActivity;
  */
 public class A_StartPageActivityTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
-	
+
 	/**
 	 * Robotium solo object
 	 */
@@ -30,7 +30,9 @@ public class A_StartPageActivityTest extends
 		super(StartPageActivity.class);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see android.test.ActivityInstrumentationTestCase2#setUp()
 	 */
 	protected void setUp() throws Exception {
@@ -38,7 +40,9 @@ public class A_StartPageActivityTest extends
 		robotiumSolo = new Solo(getInstrumentation(), getActivity());
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see android.test.ActivityInstrumentationTestCase2#tearDown()
 	 */
 	protected void tearDown() throws Exception {
@@ -47,40 +51,44 @@ public class A_StartPageActivityTest extends
 	}
 
 	/**
-	 * Test method for testing Sales Management Application {@link StartPageActivity}
+	 * Test method for testing Sales Management Application
+	 * {@link StartPageActivity}
 	 */
-	public void testSalesManagementStartPage()  {
-		
+	public void testSalesManagementStartPage() {
+
 		// check that we have the right activity
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
-	    // click on start button
-	    robotiumSolo.clickOnButton(0);
+		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
+				StartPageActivity.class);
+		// click on start button
+		robotiumSolo.clickOnButton(0);
 		robotiumSolo.waitForDialogToOpen();
 		assertTrue("Loading Dialogue Missing",
 				robotiumSolo
 						.waitForText("Loading Node Details .... Please Wait"));
 		robotiumSolo.waitForDialogToClose();
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", PlayGridActivity.class);
-	    
-	    robotiumSolo.goBack();
-	    robotiumSolo.waitForDialogToOpen();
-	    robotiumSolo.clickOnButton("Yes");
-	    robotiumSolo.waitForDialogToClose();
-	    robotiumSolo.waitForActivity(StartPageActivity.class);
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
-	    robotiumSolo.clickOnButton(1);
+		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
+				PlayGridActivity.class);
+
+		robotiumSolo.goBack();
 		robotiumSolo.waitForDialogToOpen();
-		assertTrue("Loading Dialogue Missing",
-				robotiumSolo
-						.waitForText("Loading List .... Please Wait"));
+		robotiumSolo.clickOnButton("Yes");
 		robotiumSolo.waitForDialogToClose();
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", AdministrationActivity.class);
-	    
-	    robotiumSolo.goBack();
-	    robotiumSolo.sleep(1000);
-	    robotiumSolo.waitForText(robotiumSolo.getString(R.string.app_name));
-	    robotiumSolo.waitForActivity(StartPageActivity.class);
-	    robotiumSolo.assertCurrentActivity("Found Wrong Activity", StartPageActivity.class);
+		robotiumSolo.waitForActivity(StartPageActivity.class);
+		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
+				StartPageActivity.class);
+		robotiumSolo.clickOnButton(1);
+		robotiumSolo.waitForDialogToOpen();
+		robotiumSolo.waitForActivity(AdministrationActivity.class);
+		robotiumSolo.waitForDialogToClose();
+		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
+				AdministrationActivity.class);
+
+		robotiumSolo.goBack();
+		robotiumSolo.sleep(1000);
+		robotiumSolo.waitForText(robotiumSolo.getString(R.string.app_name));
+		robotiumSolo.waitForActivity(StartPageActivity.class);
+		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
+				StartPageActivity.class);
 	}
 
 }

@@ -9,8 +9,8 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.view.Display;
 
 import com.robotium.solo.Solo;
-import com.shrikanthavale.salesmanagement.PlayGridActivity;
 import com.shrikanthavale.salesmanagement.StartPageActivity;
+import com.shrikanthavale.salesmanagement.administration.AdministrationActivity;
 
 import eu.fbk.se.androidmonkey.Monkey;
 
@@ -18,7 +18,7 @@ import eu.fbk.se.androidmonkey.Monkey;
  * @author Shrikant Havale
  *
  */
-public class E_PlayGameActivity_Robotium_MonkeyTest extends
+public class H_PlayGameActivity_Robotium_MonkeyTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 
 	/**
@@ -31,7 +31,7 @@ public class E_PlayGameActivity_Robotium_MonkeyTest extends
 	/**
 	 * @param name
 	 */
-	public E_PlayGameActivity_Robotium_MonkeyTest() {
+	public H_PlayGameActivity_Robotium_MonkeyTest() {
 		super(StartPageActivity.class);
 	}
 
@@ -65,14 +65,12 @@ public class E_PlayGameActivity_Robotium_MonkeyTest extends
 		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
 				StartPageActivity.class);
 		// click on start button
-		robotiumSolo.clickOnButton(0);
+		robotiumSolo.clickOnButton(1);
 		robotiumSolo.waitForDialogToOpen();
-		assertTrue("Loading Dialogue Missing",
-				robotiumSolo
-						.waitForText("Loading Node Details .... Please Wait"));
+		robotiumSolo.waitForActivity(AdministrationActivity.class);
 		robotiumSolo.waitForDialogToClose();
 		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
-				PlayGridActivity.class);
+				AdministrationActivity.class);
 
 		Display display = getActivity().getWindowManager().getDefaultDisplay();
 		Instrumentation inst = getInstrumentation();
