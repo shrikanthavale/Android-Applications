@@ -18,7 +18,7 @@ import eu.fbk.se.androidmonkey.Monkey;
  * @author Shrikant Havale
  *
  */
-public class H_PlayGameActivity_Robotium_MonkeyTest extends
+public class H_AdministrationActivity_Robotium_MonkeyTest extends
 		ActivityInstrumentationTestCase2<StartPageActivity> {
 
 	/**
@@ -31,7 +31,7 @@ public class H_PlayGameActivity_Robotium_MonkeyTest extends
 	/**
 	 * @param name
 	 */
-	public H_PlayGameActivity_Robotium_MonkeyTest() {
+	public H_AdministrationActivity_Robotium_MonkeyTest() {
 		super(StartPageActivity.class);
 	}
 
@@ -67,10 +67,26 @@ public class H_PlayGameActivity_Robotium_MonkeyTest extends
 		// click on start button
 		robotiumSolo.clickOnButton(1);
 		robotiumSolo.waitForDialogToOpen();
-		robotiumSolo.waitForActivity(AdministrationActivity.class);
+		assertTrue("Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading List .... Please Wait"));
 		robotiumSolo.waitForDialogToClose();
+		robotiumSolo.waitForActivity(AdministrationActivity.class);
 		robotiumSolo.assertCurrentActivity("Found Wrong Activity",
 				AdministrationActivity.class);
+		
+		robotiumSolo.scrollListToBottom(0);
+		robotiumSolo.scrollListToTop(0);
+		robotiumSolo.clickInList(1);
+		robotiumSolo.waitForDialogToOpen();
+		assertTrue("Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading Description Details .... Please Wait"));
+		assertTrue("Loading Dialogue Missing",
+				robotiumSolo
+						.waitForText("Loading Option Details .... Please Wait"));
+		robotiumSolo.waitForDialogToClose();
+		
 
 		Display display = getActivity().getWindowManager().getDefaultDisplay();
 		Instrumentation inst = getInstrumentation();
