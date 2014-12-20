@@ -84,7 +84,7 @@ public class LoadNodeDataAsync extends
 		// update the result to UI
 		playGridActivity.setNodeMaxAmountMap(result);
 		playGridActivity.initializeCustomerNodesText();
-		progressBar.dismiss();
+		progressBar.hide();
 		super.onPostExecute(result);
 	}
 }
